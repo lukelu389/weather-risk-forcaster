@@ -1,0 +1,44 @@
+{
+  "phase": 1,
+  "core_tests": {
+    "command": "make reproduce PYTHON=.venv/bin/python",
+    "count": 55,
+    "passed": 55
+  },
+  "demo": {
+    "manifest": "runs/demo-20261013T120935.357679Z/manifest.json",
+    "status": "passed",
+    "observation_rows": 10176,
+    "series": 19,
+    "synthetic_only": true,
+    "exact_replay_verified": true
+  },
+  "live_verification": {
+    "manifest": "runs/live-20261013T120935.365011Z/manifest.json",
+    "status": "passed",
+    "observation_rows": 39760,
+    "series": 17,
+    "period": [
+      "2018-01-01",
+      "2025-12-31"
+    ],
+    "providers_verified": [
+      "fred",
+      "boc",
+      "eccc",
+      "yahoo"
+    ],
+    "exact_replay_verified": true,
+    "eia": "not_live_verified: no EIA_API_KEY configured; fixture tests pass and skips are preserved in replay",
+    "validation_errors": 0,
+    "validation_warnings": 28,
+    "historical_point_in_time_certified": false
+  },
+  "environment": {
+    "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "lock_file": "requirements-market.lock.txt",
+    "dependency_check": "pip check passed"
+  },
+  "scope": "Phase 1 only; phases 2\u20137 have not been executed."
+}

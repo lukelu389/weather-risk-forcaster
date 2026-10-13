@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-risk-forecaster"
+version = "0.1.0"
+description = "Auditable weather and energy risk research: Phase 1 data foundation"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+market = ["yfinance==0.2.66"]
+
+[project.scripts]
+weather-risk = "weather_risk.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
