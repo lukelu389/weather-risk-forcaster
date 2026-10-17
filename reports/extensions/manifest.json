@@ -1,0 +1,201 @@
+{
+  "artifact_root": "manifest_directory",
+  "artifacts": {
+    "coverage.csv": "60bd798931b5f6324dfad6e3f0fa634ada62543235d52ad8a1878de7b6dc3141",
+    "history_report.md": "e0796f468f70e967af3614ed98e17af668edc08a0f9da4cdec2d724d1f81131e",
+    "station_metadata.json": "b31d3e8718b1507155bc1da8cabf65727b568523464d6a15a99a89f7752935d2",
+    "validation.json": "9d4360c79b5359ec81dd4f1ca9cc41a736e592c6b2a7ebfc377ad799c5426316"
+  },
+  "code_sha256": {
+    "cache.py": "2bd0efa1fcddf7f76b09fa85299e6c9243cc72fd1de370e229b9bc49ec5e1dac",
+    "historical.py": "d5a59e091c5bf25e2ddd997b63ddada53558ddab5783350fb76c68e6c2fb83af",
+    "providers.py": "060ab845fec7c9dc8c55d04b137a2a452331d4b899845a20f73387f8ab0f6d47",
+    "schema.py": "c79489ab29ec379a23f19c81ae193756d8e34b0d60d1e9ea84ce208e375bfca1",
+    "validation.py": "03515b7994ccb824e6cd0726d2083239bd9605d7682f70fd9e6fd1a43a3b0561"
+  },
+  "historical_point_in_time_certified": false,
+  "manifest_kind": "published_subset",
+  "observation_rows": 225819,
+  "omitted_original_artifact_count": 3,
+  "original_artifact_count": 7,
+  "original_manifest_sha256": "32adf41c30ba697db62aacdae0c9244967a190ffbc0ee6b95b668e6879ea9c50",
+  "original_sources": [
+    {
+      "request": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?coed=2025-12-31&cosd=2000-01-01&id=DHHNGSP"
+      },
+      "request_id": "b45a69013d03d361a4ed50835818db213cfcc3c6f05a71a9931d2043f69a3d97",
+      "retrieved_at": "2026-10-15T12:55:40.269024+00:00",
+      "sha256": "c1a4cbd796b3a98ea72bcf864499508ca3e795ee79add7b81535c09e0738a75a"
+    },
+    {
+      "request": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?coed=2025-12-31&cosd=2000-01-01&id=DCOILWTICO"
+      },
+      "request_id": "c854d7038bcfe9394ed9cb5caf037981ddd3f92886ddb69a22eab90991c6be7a",
+      "retrieved_at": "2026-10-15T12:55:40.632869+00:00",
+      "sha256": "c8449b4fec21be5efb2a524ee7a2ba512ac52ea0ddfe6da0b6a69bf6280f4c56"
+    },
+    {
+      "request": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?coed=2025-12-31&cosd=2000-01-01&id=DGS3MO"
+      },
+      "request_id": "d4992a5d9be96a161bcc4cb74cbd6a3adf6bc736afecd001a02c2b7e49cf8374",
+      "retrieved_at": "2026-10-15T12:55:42.671283+00:00",
+      "sha256": "d065a6719815c38931fbafcac73f48ccebb179e9878a4e2818e379e1265a5a24"
+    },
+    {
+      "request": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?coed=2025-12-31&cosd=2000-01-01&id=CPIAUCSL"
+      },
+      "request_id": "d0b1129144124c0c6b80bb9301d57f4ceac806503576bb0d1e916900e02c84c2",
+      "retrieved_at": "2026-10-15T12:55:43.153605+00:00",
+      "sha256": "c715b21803e3d3c206c9f165b8cce9661d9a79e65b07ebd6af4017e4018890b3"
+    },
+    {
+      "request": {
+        "options": {
+          "actions": true,
+          "auto_adjust": false,
+          "back_adjust": false,
+          "end": "2026-01-01",
+          "interval": "1d",
+          "keepna": true,
+          "repair": false,
+          "rounding": false,
+          "start": "2000-01-01",
+          "timeout": 30
+        },
+        "provider": "yahoo",
+        "ticker": "ENB.TO"
+      },
+      "request_id": "7558a034845650b3d3fbb89bbf7a0132d312c9d4525de99ed9b8d5889b806511",
+      "retrieved_at": "2026-10-15T12:55:44.786680+00:00",
+      "sha256": "5110ca62527376a2ac6b61934757eb5b4b8ed6012d19f25c9f3c3ccf82bce9fc"
+    },
+    {
+      "request": {
+        "options": {
+          "actions": true,
+          "auto_adjust": false,
+          "back_adjust": false,
+          "end": "2026-01-01",
+          "interval": "1d",
+          "keepna": true,
+          "repair": false,
+          "rounding": false,
+          "start": "2000-01-01",
+          "timeout": 30
+        },
+        "provider": "yahoo",
+        "ticker": "SU.TO"
+      },
+      "request_id": "3057387f090a8e3d37b4d96d516b9b04c5ee30c72c66487265a4125b12d6c2a7",
+      "retrieved_at": "2026-10-15T12:55:45.272010+00:00",
+      "sha256": "3a67e472244e822a654649c95571628267502e862ebcf0e810c8391cafd8ad1e"
+    },
+    {
+      "request": {
+        "options": {
+          "actions": true,
+          "auto_adjust": false,
+          "back_adjust": false,
+          "end": "2026-01-01",
+          "interval": "1d",
+          "keepna": true,
+          "repair": false,
+          "rounding": false,
+          "start": "2000-01-01",
+          "timeout": 30
+        },
+        "provider": "yahoo",
+        "ticker": "FTS.TO"
+      },
+      "request_id": "eae79ffdeb3c3e62e090bdfa1749aa1f765c42bfd10746f4b7f085f454446310",
+      "retrieved_at": "2026-10-15T12:55:45.768977+00:00",
+      "sha256": "227094b080a47c626ca4e77ee8d646b46ee20d98a4d0acb1180cfd80baa828ac"
+    },
+    {
+      "request": {
+        "options": {
+          "actions": true,
+          "auto_adjust": false,
+          "back_adjust": false,
+          "end": "2026-01-01",
+          "interval": "1d",
+          "keepna": true,
+          "repair": false,
+          "rounding": false,
+          "start": "2000-01-01",
+          "timeout": 30
+        },
+        "provider": "yahoo",
+        "ticker": "EMA.TO"
+      },
+      "request_id": "9f99267c7357931f3ce9880df45a9ef8257ea8e5ee31a3a3833e582463a2aea2",
+      "retrieved_at": "2026-10-15T12:55:46.251162+00:00",
+      "sha256": "1018d202441f507d027fb7ac3fb899ffe2e58da6e93a88582b49d3e500a041a8"
+    },
+    {
+      "request": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?coed=2025-12-31&cosd=2000-01-01&id=DEXCAUS"
+      },
+      "request_id": "5afeece417c926dd2e537aa596d90ad37093aaa6a1c5e3ed7d36aa9fb1f5e164",
+      "retrieved_at": "2026-10-15T12:55:47.333910+00:00",
+      "sha256": "490a7ace4dce612f4279c286f3f475ecf11f91750de0238f40f73cdf6bc35a42"
+    },
+    {
+      "request": {
+        "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt"
+      },
+      "request_id": "ba66c457c533cee0382b89bf144a7c2e35fb9a7b0f1536ecf17642fb4717884a",
+      "retrieved_at": "2026-10-15T12:51:18.801427+00:00",
+      "sha256": "428eabc955883187935bce283766d5646e3ed7484b92eb0803874c0e8dd9b342"
+    },
+    {
+      "request": {
+        "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00094846.dly"
+      },
+      "request_id": "49d5d78f24ac53171310c5f6fbe31c624c3d620c85110ac4d0279dcffa259f4e",
+      "retrieved_at": "2026-10-15T17:32:23.738542+00:00",
+      "sha256": "74e2c6f68090bdf9d17d64aa3b8ba4898bae76c766615a782b89c243d0e6af22"
+    },
+    {
+      "request": {
+        "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00014732.dly"
+      },
+      "request_id": "239567625da262e2e754fc541dc51a9398e5769f2edc340fd508f591f1644a6f",
+      "retrieved_at": "2026-10-15T17:32:24.630757+00:00",
+      "sha256": "8863742ad3217bd93a26b8cf3f82fea2db66f201211f9fb775346e141f720c9c"
+    },
+    {
+      "request": {
+        "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00012960.dly"
+      },
+      "request_id": "3524ad07c035e6f4742015e6eda2c0f4a8eb2ed419cd62dafe2b5b08638c4a5d",
+      "retrieved_at": "2026-10-15T17:32:25.420174+00:00",
+      "sha256": "d73943d12e9d1f70ef473a65cd95b2e3e7ee82df1bdc241c133c09deb441ac3c"
+    },
+    {
+      "request": {
+        "url": "https://www.eia.gov/dnav/ng/hist/nw2_epg0_swo_r48_bcfw.htm"
+      },
+      "request_id": "69af9566b1ebb7a745fc61f3da24b81e60fb7e98be270f892be763cfbaa93884",
+      "retrieved_at": "2026-10-15T12:51:28.946526+00:00",
+      "sha256": "fb48a1fd8f74144a414438618f0ea2feb54da223e7acd709fdcf24560e1961fd"
+    },
+    {
+      "request": {
+        "url": "https://www.eia.gov/dnav/ng/hist/n9140us2m.htm"
+      },
+      "request_id": "1c9e859fc714d08e0fcf75faba86b678ce547e13c00d9d6348d274263d6121c4",
+      "retrieved_at": "2026-10-15T12:51:39.077074+00:00",
+      "sha256": "8d74d4ef31def5cd31eb647e739e30206a93652dcea60feb7c802365a494c9be"
+    }
+  ],
+  "phase": "historical-extension",
+  "publication_note": "Derived public manifest: hashes cover included files only; workstation prefixes removed. Other provenance hashes refer to the original experiment, not corrected release source. The full private run is not distributed.",
+  "scope": "Additional latest-vintage exploratory staging; no model fitting or new holdout evaluation",
+  "series": 29,
+  "status": "validation_failed"
+}

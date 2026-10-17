@@ -1,0 +1,125 @@
+{
+  "artifacts": {
+    "notebooks/01_final_evaluation.ipynb": "04fe7d4cf7db00005dcd835692b6ca50c6ddf49e490c478ad4774f665814368b",
+    "notebooks/02_portfolio_sensitivity.ipynb": "b1a45798a64deb3c262b5180fb0a18e20ac20c6ce1db3f71a5f9c248c202ce37",
+    "output/pdf/committee-memo.pdf": "761c9df98e9f854754071eed339e43ce74d3a92f8905fbdd7b6315d2ecae8514",
+    "reports/phase7/committee-memo.md": "45392d625de254916d2c23bae65a328b87074feed3c7d4509240e6c08c4db500",
+    "reports/phase7/dashboard/index.html": "beca3f7ea8d6e05e45d35388354a425b172891aa00cb708fc01224fe9db47c5c"
+  },
+  "authoring_runtime": {
+    "python": "3.12.14",
+    "reportlab": "4.4.9"
+  },
+  "browser": {
+    "console_errors_or_warnings": 0,
+    "coverage_cases": 12,
+    "coverage_rows_per_case": 9,
+    "desktop_visual_review": "Coverage, weather and portfolio views inspected; labels and tables legible.",
+    "engine": "Codex in-app browser",
+    "filters": [
+      "three assets",
+      "95/99 percent levels",
+      "primary/supplementary inference",
+      "0/5/10 bp costs",
+      "all/2024/2025 calendar periods"
+    ],
+    "limitations_disclosure": "Expanded successfully; consumed holdout and correction limitations visible.",
+    "narrow_screen_visual_review": {
+      "document_scroll_width": 375,
+      "observed_document_width": 375,
+      "requested_viewport": [
+        390,
+        844
+      ],
+      "result": "No page horizontal overflow; wide table scrolls within its container.",
+      "table_content_width": 597,
+      "table_wrapper_width": 311
+    },
+    "portfolio_cases": 18,
+    "portfolio_rows_per_case": 9,
+    "temporary_viewport_reset": true,
+    "tiny_pvalue_display": "Gas SSM weather 99% exact adjusted p displays 3.12e-5, not rounded zero.",
+    "total_filter_cases": 42,
+    "url": "http://localhost:8765/",
+    "weather_cases": 12,
+    "weather_rows_per_case": 3
+  },
+  "builder_sha256": "897d6f278eab71db5c3aa2ee509189a1ef6699f3f71bca67cae7a8454736843c",
+  "dashboard_template_sha256": "21f561bbc5b03f081b5530a967fe3420988866085d7c1bdd75db02e9409ea2d9",
+  "documentation_checks": {
+    "broken_links": [],
+    "local_links_checked": 57,
+    "reviews_with_exactly_three_interview_questions": 7
+  },
+  "execution_method": "Fresh Python namespace per notebook; sequential cells; Agg plotting backend. Jupyter UI/kernel not tested.",
+  "full_research_suite": {
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
+    "dependency_consistency": "pip check passed",
+    "log_sha256": "aa52bae8e688654ba4ea93f17b40082b8a5d9a4325f14de85f0ae57bef0dff1e",
+    "skipped": 0,
+    "status": "passed",
+    "tests": 230
+  },
+  "identical_manifests": true,
+  "limitations": [
+    "Reproducibility verified in the recorded local runtimes only.",
+    "Notebook code executed sequentially; Jupyter UI/kernel not tested.",
+    "Original Phase 5 PNG plots visually inspected; their PDFs checked for byte identity but not separately rendered.",
+    "Latest-vintage data and assumed availability do not establish historical point-in-time validity.",
+    "The final holdout is consumed; new model claims require new prospective evidence."
+  ],
+  "manifest_sha256": "3df8439caaae004ac440675889c456d17f54a1c16aefbad583b7ed614a35f194",
+  "matching_artifacts": 5,
+  "notebook_code_cells": {
+    "notebooks/01_final_evaluation.ipynb": 4,
+    "notebooks/02_portfolio_sensitivity.ipynb": 4
+  },
+  "notebook_execution_log_sha256": "c917e1233eaf7fbf336e384085ad10a6d176d022c879eba53a108ac529e5913d",
+  "pdf_pages": 2,
+  "pdf_text_checks_passed": true,
+  "pdf_visual_review": {
+    "pages_inspected": 2,
+    "result": "Rendered pages inspected; headings, body text and footer are legible, with no clipped or overlapping content.",
+    "reviewed_pdf_sha256": "761c9df98e9f854754071eed339e43ce74d3a92f8905fbdd7b6315d2ecae8514"
+  },
+  "phase": 7,
+  "prior_results": {
+    "docs/phase-5-sensitivity-verification.json": {
+      "artifacts_per_run": 14,
+      "hashes_and_manifest_equality_rechecked": true,
+      "runs": [
+        "runs/bootstrap-sensitivity-20261015T025217.243982Z",
+        "runs/bootstrap-sensitivity-20261015T025226.218434Z"
+      ]
+    },
+    "docs/phase-5-verification.json": {
+      "artifacts_per_run": 617,
+      "hashes_and_manifest_equality_rechecked": true,
+      "runs": [
+        "runs/evaluation-20261014T172855.647818Z",
+        "runs/evaluation-20261014T172855.650365Z"
+      ]
+    },
+    "docs/phase-6-verification.json": {
+      "artifacts_per_run": 6,
+      "hashes_and_manifest_equality_rechecked": true,
+      "runs": [
+        "runs/portfolio-20261015T025215.420657Z",
+        "runs/portfolio-20261015T025219.085339Z"
+      ]
+    }
+  },
+  "repeated_builds": 2,
+  "scope": "Completed local communication of the qualified pilot; no production approval, public publication or new model fitting.",
+  "seal_verification": "passed",
+  "sources": {
+    "docs/phase-5-bootstrap-addendum.md": "759c001c961d60973c863ad5a13f15d26a12480f70d16ed60276f5988698af7f",
+    "docs/phase-5-first-access.json": "bc796a7a2b845189f1261618fa274a110d595093b875d925b560a7d15b148c3b",
+    "docs/phase-5-seal.json": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
+    "reports/phase5-sensitivity/manifest.json": "b37924588c7acd40b75457e839ab477f6dcc7d8298fbcbef1f4e4d09f6010f80",
+    "reports/phase5/manifest.json": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+    "reports/phase6/manifest.json": "01fef6cfc61352ecf52a6bb5f479a62391cba024ad0eb0285f72f9e8db40fa26"
+  },
+  "status": "passed",
+  "verified_at_utc": "2026-10-15T07:28:29.119787+00:00"
+}

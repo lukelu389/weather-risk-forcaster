@@ -1,0 +1,15 @@
+{
+  "asset": "canadian_basket",
+  "calendar_subperiods": [
+    2024,
+    2025
+  ],
+  "cost_bps": [
+    0,
+    5,
+    10
+  ],
+  "input_manifest_sha256": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+  "input_run": "runs/evaluation-20261014T172855.647818Z",
+  "notional_cad": 1000000.0
+}

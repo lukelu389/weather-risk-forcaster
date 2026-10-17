@@ -1,0 +1,88 @@
+{
+  "artifacts": {
+    "baseline_config.json": "b2dc87c8fe0989c7c7d1a15444d3f2135e2a7cf84060139b4e4d061a6673e827",
+    "baseline_report.md": "aa38f099f5cbaba51a975c7458e28a62b472b62d527aa62bbb45d266973ff45a",
+    "design_panel.csv": "8f5266971463c76f43394c4689c3e705d8e30c58d73802206ff2dc11b24da6ff",
+    "forecasts.csv": "16b4fd2088200fb95b01b5993f594354b2e994439b54f2317022b68c44963d52",
+    "model_fits.json": "ff4f6e0c5cd0b19c8c315627365d885cccf0b1ce4c0b1d0d7e56abfb0a1dcd33",
+    "requirements-baselines.lock.txt": "67b4b70a1d03f9a1002fb9198eb3066557fbf33017eabfdd042b27837a8a7a71",
+    "source_snapshot.json": "18d330bcebc040c5949b4f1faf9fb3ebd99eec3c3c2feb48cb8224c86181d86b",
+    "tuning_scores.csv": "61c0d712fbe4349f9a8dc9b0471971d7a617047c94b9c36014b44491e0900517"
+  },
+  "code_sha256": {
+    "__init__.py": "ff29bb760b931ac9f2fb9a9447236115e6ea3517a9aaa59b7dc8e398f3bc142a",
+    "__main__.py": "7a7beaaa82a6df0b77f113ee66bd9538f96a5a3e21edbe23afc42e43b494cc0c",
+    "baseline_models.py": "8b311fe84df2f82a342067affba7da5d26912c78d467f9f8cedfbc472df9581b",
+    "baselines.py": "e592f15299fa01c43119afd0849ee327abf0ddb9f3756732f74568f43cfaba24",
+    "cache.py": "2bd0efa1fcddf7f76b09fa85299e6c9243cc72fd1de370e229b9bc49ec5e1dac",
+    "demo.py": "55f3b15687313d9e85f34cd265da514f4127368314ebd508f89bf02cf9bd5925",
+    "eda.py": "08292d70c91134555e165030660daac9191e44801949d50f3f1431f782152d90",
+    "eda_core.py": "ba529ba0e9cc05355be8222ac9fddad4059a9f45d3043095b4cb21bb8840dcc4",
+    "eda_plots.py": "7c379af28f987e9772c8228bb123b42affacc95ac5d140a47807137c7c241c62",
+    "eda_weather.py": "7fc620ac6bc4abbd2562db57cf718b39c14269c11daacc629172abae5e6a11a1",
+    "pipeline.py": "53c6add84f84775ab2a757202678a230a4be1391126b4ea5674e489327443235",
+    "providers.py": "060ab845fec7c9dc8c55d04b137a2a452331d4b899845a20f73387f8ab0f6d47",
+    "risk.py": "dea8bb656f932070a86eb28561e6b1162a73e3448e898ea91cce03e3934f1e36",
+    "schema.py": "c79489ab29ec379a23f19c81ae193756d8e34b0d60d1e9ea84ce208e375bfca1",
+    "timing.py": "2dd4cd4157ef0f96426156ed9787652c908094abdb0d9cf564aea2c97ef52a78",
+    "validation.py": "03515b7994ccb824e6cd0726d2083239bd9605d7682f70fd9e6fd1a43a3b0561"
+  },
+  "core_workflow": {
+    "command": "make reproduce",
+    "optional_module_skips": 5,
+    "passed": 74,
+    "synthetic_demo": "passed"
+  },
+  "dependency_check": "No broken requirements found.",
+  "failed_forecast_rows": 0,
+  "final_test_numeric_values_read": false,
+  "forecast_invariants": {
+    "99pct_risk_at_least_95pct": true,
+    "loss_es_at_least_var": true,
+    "no_final_test_forecasts": true,
+    "origin_precedes_label_availability": true,
+    "positive_variances": true,
+    "training_availability_not_after_origin": true
+  },
+  "forecast_rows": 15400,
+  "garch_fits_near_persistence_cap": 112,
+  "input_observations_sha256": "38fe5a6e442103f1e8e1cf2a05302a20c3e60ee1cca98e9b9131492584ff581e",
+  "manifest_equal": true,
+  "matching_artifacts": 8,
+  "packages": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1"
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+  "runs": [
+    "runs/baselines-20261014T001357.650920Z",
+    "runs/baselines-20261014T001416.287189Z"
+  ],
+  "scope": "Same preserved latest-vintage snapshot, source, configuration and installed environment; no provider fetch. Cross-platform identity not claimed.",
+  "skipped_forecast_rows": 0,
+  "status": "passed",
+  "successful_model_fits": 300,
+  "tests": {
+    "command": "make test PYTHON=.venv/bin/python",
+    "failures": 0,
+    "passed": 131,
+    "skips": 0,
+    "test_sha256": {
+      "test_baseline_models.py": "7639e9bf419aa7363e456d9d1188aa5e9a0c73230daa003844a6aec76a6677ec",
+      "test_baselines.py": "9d6bdc3a9a915db2a15f582c4ec05cd72a160b8c2c6e576dd23b6ad3bbb4c2e6",
+      "test_cache.py": "22bd0594587ecabe645a425359e32f141394d959ada2a13d14c41d5513d178b4",
+      "test_eda_core.py": "271f343a589cb610636cc849ef666e808ca4640c14beae374c33fa598adb3365",
+      "test_eda_pipeline.py": "ec4e292b5defcc82d70d2c04562b30d66eb32c31c0d3c24d9b420ae6b1c04acc",
+      "test_eda_weather.py": "7cbbb027916edbb443301253564a8ec4aaa664c537cce380de19e931438f3251",
+      "test_pipeline.py": "4320357c59a05c956ac42e31ecfc2afef28ba44e58f3359d9ed0a2e1d096037e",
+      "test_providers.py": "f1573d169f25c2db62e337d444bd8fc441fa2b80c26200a483601dc877f200d1",
+      "test_risk.py": "c088f651aa046e8dec16b6eeb638a96503d96ba2c6008ec3106961dc5a76459a",
+      "test_timing.py": "d8d1c8f791b95c5a5bddbdddf12561bb3a3da3fe7f6df28efb1eb74b3e7697e8",
+      "test_validation.py": "420b3c0aad599ae4e5338f95d6aebdcb70c7ae78894cc2b7981e2c3d49b9fb3b"
+    }
+  },
+  "verification_date_local": "2026-10-13"
+}

@@ -1,0 +1,8 @@
+{
+  "input_manifest_sha256": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+  "input_run": "runs/evaluation-20261014T172855.647818Z",
+  "protocol_document": "docs/phase-5-bootstrap-addendum.md",
+  "protocol_document_sha256": "759c001c961d60973c863ad5a13f15d26a12480f70d16ed60276f5988698af7f",
+  "reason": "Post-exposure correction of insufficient p-value resolution under the prespecified Holm families; no forecast refitting or model selection.",
+  "replications": 19999
+}

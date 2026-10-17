@@ -1,0 +1,88 @@
+series_id,period,frequency,rows,finite_rows,null_rows,expected_periods_approx,finite_coverage_approx,first,last,calendar_basis
+henry_hub_spot,all,business_daily,6778,5217,1561,6783,0.7691287041132242,2000-01-10,2025-12-31,approximate; not official exchange/release sessions
+henry_hub_spot,2008,business_daily,262,253,9,262,0.9656488549618321,2008-01-01,2008-12-31,approximate; not official exchange/release sessions
+henry_hub_spot,2014-2016,business_daily,783,769,14,783,0.9821200510855683,2014-01-01,2016-12-30,approximate; not official exchange/release sessions
+wti_spot,all,business_daily,6782,6141,641,6783,0.9053516143299425,2000-01-04,2025-12-31,approximate; not official exchange/release sessions
+wti_spot,2008,business_daily,262,253,9,262,0.9656488549618321,2008-01-01,2008-12-31,approximate; not official exchange/release sessions
+wti_spot,2014-2016,business_daily,783,744,39,783,0.9501915708812261,2014-01-01,2016-12-30,approximate; not official exchange/release sessions
+us_3m_yield,all,business_daily,6783,6502,281,6783,0.9585729028453487,2000-01-03,2025-12-31,approximate; not official exchange/release sessions
+us_3m_yield,2008,business_daily,262,251,11,262,0.9580152671755725,2008-01-01,2008-12-31,approximate; not official exchange/release sessions
+us_3m_yield,2014-2016,business_daily,783,751,32,783,0.9591315453384419,2014-01-01,2016-12-30,approximate; not official exchange/release sessions
+us_cpi,all,monthly,312,311,1,312,0.9967948717948718,2000-01-31,2025-12-31,approximate; not official exchange/release sessions
+us_cpi,2008,monthly,12,12,0,12,1.0,2008-01-31,2008-12-31,approximate; not official exchange/release sessions
+us_cpi,2014-2016,monthly,36,36,0,36,1.0,2014-01-31,2016-12-31,approximate; not official exchange/release sessions
+enb_to_adj_close,all,business_daily,6575,6531,44,6783,0.9628482972136223,2000-01-04,2025-12-31,approximate; not official exchange/release sessions
+enb_to_adj_close,2008,business_daily,252,252,0,262,0.9618320610687023,2008-01-02,2008-12-31,approximate; not official exchange/release sessions
+enb_to_adj_close,2014-2016,business_daily,753,753,0,783,0.9616858237547893,2014-01-02,2016-12-30,approximate; not official exchange/release sessions
+su_to_adj_close,all,business_daily,6575,6531,44,6783,0.9628482972136223,2000-01-04,2025-12-31,approximate; not official exchange/release sessions
+su_to_adj_close,2008,business_daily,252,252,0,262,0.9618320610687023,2008-01-02,2008-12-31,approximate; not official exchange/release sessions
+su_to_adj_close,2014-2016,business_daily,753,753,0,783,0.9616858237547893,2014-01-02,2016-12-30,approximate; not official exchange/release sessions
+fts_to_adj_close,all,business_daily,6575,6530,45,6783,0.9627008698216128,2000-01-04,2025-12-31,approximate; not official exchange/release sessions
+fts_to_adj_close,2008,business_daily,252,252,0,262,0.9618320610687023,2008-01-02,2008-12-31,approximate; not official exchange/release sessions
+fts_to_adj_close,2014-2016,business_daily,753,753,0,783,0.9616858237547893,2014-01-02,2016-12-30,approximate; not official exchange/release sessions
+ema_to_adj_close,all,business_daily,6575,6530,45,6783,0.9627008698216128,2000-01-04,2025-12-31,approximate; not official exchange/release sessions
+ema_to_adj_close,2008,business_daily,252,252,0,262,0.9618320610687023,2008-01-02,2008-12-31,approximate; not official exchange/release sessions
+ema_to_adj_close,2014-2016,business_daily,753,753,0,783,0.9616858237547893,2014-01-02,2016-12-30,approximate; not official exchange/release sessions
+usd_cad_fred,all,business_daily,6783,6518,265,6783,0.9609317411174997,2000-01-03,2025-12-31,approximate; not official exchange/release sessions
+usd_cad_fred,2008,business_daily,262,252,10,262,0.9618320610687023,2008-01-01,2008-12-31,approximate; not official exchange/release sessions
+usd_cad_fred,2014-2016,business_daily,783,752,31,783,0.9604086845466155,2014-01-01,2016-12-30,approximate; not official exchange/release sessions
+us_chicago_tmin,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_chicago_tmin,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_chicago_tmin,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_chicago_tmax,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_chicago_tmax,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_chicago_tmax,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_chicago_midrange_temp,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_chicago_midrange_temp,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_chicago_midrange_temp,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_chicago_hdd18,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_chicago_hdd18,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_chicago_hdd18,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_chicago_cdd18,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_chicago_cdd18,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_chicago_cdd18,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_chicago_precip,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_chicago_precip,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_chicago_precip,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_new_york_tmin,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_new_york_tmin,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_new_york_tmin,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_new_york_tmax,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_new_york_tmax,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_new_york_tmax,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_new_york_midrange_temp,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_new_york_midrange_temp,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_new_york_midrange_temp,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_new_york_hdd18,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_new_york_hdd18,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_new_york_hdd18,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_new_york_cdd18,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_new_york_cdd18,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_new_york_cdd18,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_new_york_precip,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_new_york_precip,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_new_york_precip,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_houston_tmin,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_houston_tmin,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_houston_tmin,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_houston_tmax,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_houston_tmax,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_houston_tmax,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_houston_midrange_temp,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_houston_midrange_temp,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_houston_midrange_temp,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_houston_hdd18,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_houston_hdd18,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_houston_hdd18,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_houston_cdd18,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_houston_cdd18,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_houston_cdd18,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_houston_precip,all,daily,9497,9497,0,9497,1.0,2000-01-01,2025-12-31,calendar days
+us_houston_precip,2008,daily,366,366,0,366,1.0,2008-01-01,2008-12-31,calendar days
+us_houston_precip,2014-2016,daily,1096,1096,0,1096,1.0,2014-01-01,2016-12-31,calendar days
+us_gas_storage,all,weekly,835,835,0,1357,0.6153279292557111,2010-01-01,2025-12-26,approximate; not official exchange/release sessions
+us_gas_storage,2008,weekly,0,0,0,53,0.0,,,approximate; not official exchange/release sessions
+us_gas_storage,2014-2016,weekly,157,157,0,157,1.0,2014-01-03,2016-12-30,approximate; not official exchange/release sessions
+us_gas_consumption,all,monthly,300,300,0,312,0.9615384615384616,2001-01-31,2025-12-31,approximate; not official exchange/release sessions
+us_gas_consumption,2008,monthly,12,12,0,12,1.0,2008-01-31,2008-12-31,approximate; not official exchange/release sessions
+us_gas_consumption,2014-2016,monthly,36,36,0,36,1.0,2014-01-31,2016-12-31,approximate; not official exchange/release sessions

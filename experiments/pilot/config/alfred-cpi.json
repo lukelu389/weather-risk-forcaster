@@ -1,0 +1,8 @@
+{
+  "series_id": "us_cpi",
+  "source_series": "CPIAUCSL",
+  "unit": "index_1982_84_100",
+  "source_unit": "Index 1982-1984=100",
+  "frequency": "monthly",
+  "timezone": "America/New_York"
+}

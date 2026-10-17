@@ -1,0 +1,59 @@
+{
+  "acf_max_lag": 20,
+  "analysis_end": "2021-12-31",
+  "analysis_start": "2018-01-01",
+  "bootstrap_block_length": 20,
+  "bootstrap_minimum_pairs": 80,
+  "bootstrap_repetitions": 500,
+  "input_observations_sha256": "38fe5a6e442103f1e8e1cf2a05302a20c3e60ee1cca98e9b9131492584ff581e",
+  "input_run": "runs/live-20261013T183642.101447Z",
+  "max_gap_days": 4,
+  "prices": [
+    {
+      "label": "Henry Hub spot",
+      "series_id": "henry_hub_spot",
+      "transform": "log_pct",
+      "unit": "log return (%)"
+    },
+    {
+      "label": "WTI spot",
+      "series_id": "wti_spot",
+      "transform": "difference",
+      "unit": "USD/barrel change"
+    },
+    {
+      "equity": true,
+      "label": "ENB.TO",
+      "series_id": "enb_to_adj_close",
+      "transform": "log_pct",
+      "unit": "log return (%)"
+    },
+    {
+      "equity": true,
+      "label": "SU.TO",
+      "series_id": "su_to_adj_close",
+      "transform": "log_pct",
+      "unit": "log return (%)"
+    },
+    {
+      "equity": true,
+      "label": "FTS.TO",
+      "series_id": "fts_to_adj_close",
+      "transform": "log_pct",
+      "unit": "log return (%)"
+    },
+    {
+      "equity": true,
+      "label": "EMA.TO",
+      "series_id": "ema_to_adj_close",
+      "transform": "log_pct",
+      "unit": "log return (%)"
+    }
+  ],
+  "seed": 1729,
+  "test_end": "2025-12-31",
+  "test_start": "2024-01-01",
+  "tuning_end": "2023-12-31",
+  "tuning_start": "2022-01-01",
+  "weather_reference_minimum": 20
+}

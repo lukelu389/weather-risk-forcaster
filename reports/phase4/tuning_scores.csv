@@ -1,0 +1,55 @@
+asset,model,confidence,forecast_rows,passed_rows,failed_rows,skipped_rows,common_scored_rows,mean_quantile_loss,mean_qlike,unit
+canadian_basket,historical,0.95,500,500,0,0,498,0.106450402006,1.13146533792,log return (%)
+canadian_basket,garch,0.95,500,500,0,0,498,0.109148628128,0.926007146664,log return (%)
+canadian_basket,gjr_garch,0.95,500,500,0,0,498,0.108911118873,0.88075481086,log return (%)
+canadian_basket,seasonal_variance,0.95,500,500,0,0,498,0.109685032735,0.942412313405,log return (%)
+canadian_basket,weather_variance,0.95,500,500,0,0,498,0.111085350021,0.990319666847,log return (%)
+canadian_basket,gru_control,0.95,500,500,0,0,498,0.116531968985,1.0233724936,log return (%)
+canadian_basket,gru_weather,0.95,500,500,0,0,498,0.115473775319,1.05246429281,log return (%)
+canadian_basket,ssm_control,0.95,500,500,0,0,498,0.118255752584,1.03158437458,log return (%)
+canadian_basket,ssm_weather,0.95,500,500,0,0,498,0.120932795741,1.06369617178,log return (%)
+canadian_basket,historical,0.99,500,500,0,0,498,0.0400974824503,1.13146533792,log return (%)
+canadian_basket,garch,0.99,500,500,0,0,498,0.032505021986,0.926007146664,log return (%)
+canadian_basket,gjr_garch,0.99,500,500,0,0,498,0.030702599438,0.88075481086,log return (%)
+canadian_basket,seasonal_variance,0.99,500,500,0,0,498,0.0308069971534,0.942412313405,log return (%)
+canadian_basket,weather_variance,0.99,500,500,0,0,498,0.0317574980512,0.990319666847,log return (%)
+canadian_basket,gru_control,0.99,500,500,0,0,498,0.03594382406,1.0233724936,log return (%)
+canadian_basket,gru_weather,0.99,500,500,0,0,498,0.0372741418328,1.05246429281,log return (%)
+canadian_basket,ssm_control,0.99,500,500,0,0,498,0.0351772303029,1.03158437458,log return (%)
+canadian_basket,ssm_weather,0.99,500,500,0,0,498,0.0375639276252,1.06369617178,log return (%)
+henry_hub_spot,historical,0.95,520,520,0,0,478,0.837972998865,4.91857370251,log return (%)
+henry_hub_spot,garch,0.95,520,520,0,0,478,0.832903375196,4.88731355517,log return (%)
+henry_hub_spot,gjr_garch,0.95,520,520,0,0,478,0.833833920236,4.88859097203,log return (%)
+henry_hub_spot,seasonal_variance,0.95,520,520,0,0,478,0.845866971287,4.94988105501,log return (%)
+henry_hub_spot,weather_variance,0.95,520,520,0,0,478,0.816860559655,4.8895826856,log return (%)
+henry_hub_spot,gru_control,0.95,520,520,0,0,478,0.85208395936,4.91376387832,log return (%)
+henry_hub_spot,gru_weather,0.95,520,520,0,0,478,0.78416093839,4.92543570537,log return (%)
+henry_hub_spot,ssm_control,0.95,520,520,0,0,478,0.834243198303,4.87888715626,log return (%)
+henry_hub_spot,ssm_weather,0.95,520,520,0,0,478,1.38620223839,5.47743402522,log return (%)
+henry_hub_spot,historical,0.99,520,520,0,0,478,0.232484671722,4.91857370251,log return (%)
+henry_hub_spot,garch,0.99,520,520,0,0,478,0.260509958038,4.88731355517,log return (%)
+henry_hub_spot,gjr_garch,0.99,520,520,0,0,478,0.260807193611,4.88859097203,log return (%)
+henry_hub_spot,seasonal_variance,0.99,520,520,0,0,478,0.229364962094,4.94988105501,log return (%)
+henry_hub_spot,weather_variance,0.99,520,520,0,0,478,0.246030616121,4.8895826856,log return (%)
+henry_hub_spot,gru_control,0.99,520,520,0,0,478,0.274979887271,4.91376387832,log return (%)
+henry_hub_spot,gru_weather,0.99,520,520,0,0,478,0.257877121012,4.92543570537,log return (%)
+henry_hub_spot,ssm_control,0.99,520,520,0,0,478,0.282872687422,4.87888715626,log return (%)
+henry_hub_spot,ssm_weather,0.99,520,520,0,0,478,0.386729599966,5.47743402522,log return (%)
+wti_spot,historical,0.95,520,520,0,0,478,0.320792887029,2.74257765216,USD/barrel change
+wti_spot,garch,0.95,520,520,0,0,478,0.259935099289,2.63163901402,USD/barrel change
+wti_spot,gjr_garch,0.95,520,520,0,0,478,0.275215111869,2.77107655416,USD/barrel change
+wti_spot,seasonal_variance,0.95,520,520,0,0,478,0.270962744331,2.62538426151,USD/barrel change
+wti_spot,weather_variance,0.95,520,520,0,0,478,0.270347853987,2.61708488639,USD/barrel change
+wti_spot,gru_control,0.95,520,520,0,0,478,0.31575377635,2.88501746362,USD/barrel change
+wti_spot,gru_weather,0.95,520,520,0,0,478,0.320389896979,2.98951933341,USD/barrel change
+wti_spot,ssm_control,0.95,520,520,0,0,478,0.307102383984,2.76358001198,USD/barrel change
+wti_spot,ssm_weather,0.95,520,520,0,0,478,0.314838610515,2.87418865277,USD/barrel change
+wti_spot,historical,0.99,520,520,0,0,478,0.110325941423,2.74257765216,USD/barrel change
+wti_spot,garch,0.99,520,520,0,0,478,0.0865674418104,2.63163901402,USD/barrel change
+wti_spot,gjr_garch,0.99,520,520,0,0,478,0.0969932423103,2.77107655416,USD/barrel change
+wti_spot,seasonal_variance,0.99,520,520,0,0,478,0.0870604110695,2.62538426151,USD/barrel change
+wti_spot,weather_variance,0.99,520,520,0,0,478,0.0881142636194,2.61708488639,USD/barrel change
+wti_spot,gru_control,0.99,520,520,0,0,478,0.114055153858,2.88501746362,USD/barrel change
+wti_spot,gru_weather,0.99,520,520,0,0,478,0.128354662157,2.98951933341,USD/barrel change
+wti_spot,ssm_control,0.99,520,520,0,0,478,0.0977817809857,2.76358001198,USD/barrel change
+wti_spot,ssm_weather,0.99,520,520,0,0,478,0.109776738088,2.87418865277,USD/barrel change

@@ -18,7 +18,8 @@
       "required": true,
       "max_missing_fraction": 0.12,
       "positive": true,
-      "jump_warning": 10
+      "jump_warning": 10,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "wti_spot",
@@ -32,7 +33,8 @@
       "stale_days": 14,
       "required": true,
       "max_missing_fraction": 0.12,
-      "jump_warning": 30
+      "jump_warning": 30,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "us_3m_yield",
@@ -45,7 +47,8 @@
       "available_hour": 18,
       "stale_days": 10,
       "required": true,
-      "max_missing_fraction": 0.12
+      "max_missing_fraction": 0.12,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "us_cpi",
@@ -59,7 +62,8 @@
       "stale_days": 110,
       "required": true,
       "max_missing_fraction": 0.12,
-      "positive": true
+      "positive": true,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "usd_cad",
@@ -73,7 +77,8 @@
       "stale_days": 7,
       "required": true,
       "max_missing_fraction": 0.12,
-      "positive": true
+      "positive": true,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "toronto_temp",
@@ -233,7 +238,8 @@
       "max_missing_fraction": 0.12,
       "source_field": "Adj Close",
       "positive": true,
-      "jump_warning": 20
+      "jump_warning": 20,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "su_to_adj_close",
@@ -249,7 +255,8 @@
       "max_missing_fraction": 0.12,
       "source_field": "Adj Close",
       "positive": true,
-      "jump_warning": 20
+      "jump_warning": 20,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "fts_to_adj_close",
@@ -265,7 +272,8 @@
       "max_missing_fraction": 0.12,
       "source_field": "Adj Close",
       "positive": true,
-      "jump_warning": 20
+      "jump_warning": 20,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "ema_to_adj_close",
@@ -281,7 +289,8 @@
       "max_missing_fraction": 0.12,
       "source_field": "Adj Close",
       "positive": true,
-      "jump_warning": 20
+      "jump_warning": 20,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "us_gas_storage",
@@ -295,7 +304,8 @@
       "stale_days": 21,
       "required": false,
       "max_missing_fraction": 0.12,
-      "positive": true
+      "positive": true,
+      "max_coverage_missing_fraction": 0.12
     },
     {
       "series_id": "us_gas_consumption",
@@ -309,7 +319,8 @@
       "stale_days": 160,
       "required": false,
       "max_missing_fraction": 0.12,
-      "positive": true
+      "positive": true,
+      "max_coverage_missing_fraction": 0.12
     }
   ]
 }

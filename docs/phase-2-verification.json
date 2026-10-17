@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "01_movements_and_dispersion.pdf": "8d864096e6d133e79c6ccc02d534793050c0662706eb9c07657382a7a4de42d0",
+    "01_movements_and_dispersion.png": "3f1252237e07e8a4c1dae915c344c495b3e2adfcc9942739c409d7771f8c3842",
+    "02_distributions_and_qq.pdf": "be6594c5fb4a401c12f53b941844a33a7661f1829948e866928e5c46cc63fbf4",
+    "02_distributions_and_qq.png": "12909eb5e7d4b4a904ff1285216671cff3e47c91dada44eb1980b12fcc7ebfaf",
+    "03_autocorrelation.pdf": "bea7cf5cbf403b8185bd6efc409fee87b74f255d4cde890697a7c04cece60f6e",
+    "03_autocorrelation.png": "75ccb8c98354dbec72bca23a9a4c68d991062d8fedec046349848f1c55e44f1a",
+    "04_seasonality.pdf": "94c7bfc38534cce1a93eff64411d0fa9d266a8acc6b1c26841c4d880cbdce032",
+    "04_seasonality.png": "0040730381ba04f5ea9ff4d0efa4579d0c0459051bfa3f12f2984e8ec11fc46d",
+    "05_lagged_weather_relationships.pdf": "3aa34d4b09fddf5471c84b98c592a6f173a4ceadd509f7ee748a4364faaefedf",
+    "05_lagged_weather_relationships.png": "34c6490b45b7abe949f9a508907eca100db92cb8d2556886ad66a9bdf4ba4e98",
+    "analysis_config.json": "56a15f89dbe9580cfb2a290aaca5bb2b2034f225c817451ea812add724a36ab4",
+    "analysis_report.md": "f7040fe17824de1e79180a1a44e0e041d3e15a7e34f298ef649d0c7414bd8ed4",
+    "autocorrelation.csv": "57ec2005ff30ef26dd5e87c4fe81379416fd0bdfebc669863dc0c02bac3210d0",
+    "development_coverage.csv": "b63383569f9f25cb9aeda8a223d016b878700d95c7d56e4a2d8b4532c272a004",
+    "requirements-analysis.lock.txt": "ec5803f3eecde8ef105c417c6d16e1eaf93ef62ff893a7d85095587123823a74",
+    "source_snapshot.json": "d3cdd7670c3beea0b78734ce13559ce51e49c58603f126a73b4d520934f5f394",
+    "subperiod_summary.csv": "1826deb1141fbfbdce6e773fe592e8708a669dda53d3c4ebddd64ac866dfeeb4",
+    "summary.csv": "af31b4ca4b25d23a9b96d770f788cd7262d76f7aacb70018f9d74471a915bd28",
+    "target_validity.csv": "23bcf612e092ae2b9fa16ccf96f8d0eb7b40e8eaab91ef4c12ae32faf10d2824",
+    "targets.csv": "d1aa8ace22f76caa2a5706d145ae094802fea7b59cbbb1406597ffcd17b037c4",
+    "weather_features.csv": "8bf2bf0e2135d06fac151bb409d14e67993bc84152f1542c7f31b973f8ace7e7",
+    "weather_relationships.csv": "972f4be50572f984c9846da336fe0cab81c6b0ea41625ac8615bc32693fce740"
+  },
+  "input_observations_sha256": "38fe5a6e442103f1e8e1cf2a05302a20c3e60ee1cca98e9b9131492584ff581e",
+  "manifest_equal": true,
+  "matching_artifacts": 22,
+  "matching_existing_outputs": 19,
+  "packages": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+  "runs": [
+    "runs/eda-20261013T193144.105125Z",
+    "runs/eda-20261013T193158.236844Z"
+  ],
+  "scope": "Same preserved snapshot, source, configuration, and installed environment; no network fetch. Cross-platform byte identity not claimed.",
+  "status": "passed"
+}

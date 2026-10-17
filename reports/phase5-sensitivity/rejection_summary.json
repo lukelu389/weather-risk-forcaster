@@ -1,0 +1,22 @@
+[
+  {
+    "family": "ES residual",
+    "first_holm_threshold_5pct": 0.000925925925925926,
+    "hypotheses": 54,
+    "primary_adjusted_rejections_5pct": 0,
+    "primary_minimum_raw_pvalue": 0.000999000999000999,
+    "sensitivity_adjusted_rejections_5pct": 3,
+    "sensitivity_minimum_raw_pvalue": 5e-05,
+    "sensitivity_unavailable_tests": 0
+  },
+  {
+    "family": "Paired scores",
+    "first_holm_threshold_5pct": 0.00030303030303030303,
+    "hypotheses": 165,
+    "primary_adjusted_rejections_5pct": 0,
+    "primary_minimum_raw_pvalue": 0.000999000999000999,
+    "sensitivity_adjusted_rejections_5pct": 1,
+    "sensitivity_minimum_raw_pvalue": 5e-05,
+    "sensitivity_unavailable_tests": 0
+  }
+]

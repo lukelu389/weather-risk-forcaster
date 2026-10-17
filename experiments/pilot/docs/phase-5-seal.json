@@ -1,0 +1,32 @@
+{
+  "files": {
+    "config/baselines.json": "63b0a484051e79fa8e10f40169456fa4c91d81647453a28e9458667c78943329",
+    "config/evaluation.json": "0b3f284d74ecca5bdbb7502f2cf315e8696178a721e92e495f5e31cd7bd09112",
+    "config/ml.json": "e5a70c14e3bef3089ff5b97d1f26c75b9e76d2a46daaf20c5826d7225ab82f6e",
+    "docs/phase-5-protocol.md": "c4d2a2d4f627b2116d6db6b21d5b3853078a8a4b49dec518436316a992a98948",
+    "requirements-ml.lock.txt": "3b1a334db34afcd5b77368ef54174e7ee7a0c11faf2c5af630024d2ba164b0a4",
+    "runs/live-20261013T183642.101447Z/config.json": "3a76790c65edfad5d6a28a06120b3517c2304454ce279b77ff5a4171c11b911c",
+    "runs/live-20261013T183642.101447Z/manifest.json": "0fddc42898fdfad2f87148b7a0bcdda55f80b99fd1f2025866b17f7cdc007922",
+    "runs/live-20261013T183642.101447Z/observations.csv": "38fe5a6e442103f1e8e1cf2a05302a20c3e60ee1cca98e9b9131492584ff581e",
+    "runs/live-20261013T183642.101447Z/validation.json": "ff54325e745857a5f218ab99e7937686cf5e0da9eca8add107ed8f7d7f36b6bf",
+    "src/weather_risk/__init__.py": "ff29bb760b931ac9f2fb9a9447236115e6ea3517a9aaa59b7dc8e398f3bc142a",
+    "src/weather_risk/baseline_models.py": "8b311fe84df2f82a342067affba7da5d26912c78d467f9f8cedfbc472df9581b",
+    "src/weather_risk/baselines.py": "f37246fbd2bcf9492b5ef2d2e1f979c2c2acdbcf5390e2166d02a709560c4495",
+    "src/weather_risk/eda.py": "08292d70c91134555e165030660daac9191e44801949d50f3f1431f782152d90",
+    "src/weather_risk/eda_core.py": "ba529ba0e9cc05355be8222ac9fddad4059a9f45d3043095b4cb21bb8840dcc4",
+    "src/weather_risk/eda_plots.py": "7c379af28f987e9772c8228bb123b42affacc95ac5d140a47807137c7c241c62",
+    "src/weather_risk/eda_weather.py": "7fc620ac6bc4abbd2562db57cf718b39c14269c11daacc629172abae5e6a11a1",
+    "src/weather_risk/evaluation.py": "ff34f4fe9447ca234b18ee0385df47d2fe118a71945f13d01e4b396d22ffd1b0",
+    "src/weather_risk/final_evaluation.py": "6ceab5084bebcc18589714627a09f30a6cf702ed53f238ae9e951c41272f64cc",
+    "src/weather_risk/ml.py": "2db3b7f35f3ff731c903f857e86d01f34af5eacad21753b23b0cfd99ed3af0c9",
+    "src/weather_risk/risk.py": "dea8bb656f932070a86eb28561e6b1162a73e3448e898ea91cce03e3934f1e36",
+    "src/weather_risk/schema.py": "c79489ab29ec379a23f19c81ae193756d8e34b0d60d1e9ea84ce208e375bfca1",
+    "src/weather_risk/sequence_models.py": "4b9ec1c5041766e56d4833cb8a2287ec90e8359b004cd161e854d4bbb75e25aa",
+    "src/weather_risk/timing.py": "2dd4cd4157ef0f96426156ed9787652c908094abdb0d9cf564aea2c97ef52a78",
+    "src/weather_risk/validation.py": "03515b7994ccb824e6cd0726d2083239bd9605d7682f70fd9e6fd1a43a3b0561"
+  },
+  "final_test_numeric_values_read_at_freeze": false,
+  "frozen_at_utc": "2026-10-14T17:28:49.321871+00:00",
+  "input_observations_sha256": "38fe5a6e442103f1e8e1cf2a05302a20c3e60ee1cca98e9b9131492584ff581e",
+  "phase": 5
+}

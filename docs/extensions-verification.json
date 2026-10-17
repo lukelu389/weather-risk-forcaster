@@ -1,0 +1,91 @@
+{
+  "changed_file_sha256": {
+    "Makefile": "79c9452a2d7764c1b1b0cc99b2eb9e308a1947b8aa3148742d46e85b58314914",
+    "README.md": "207d905eea0c5ca64ad65af98989c7d593bfdcfae51d0e56e1b664b251cb18ba",
+    "config/alfred-cpi.json": "d6993bf26cb2f363093785b43766695b74b16833d507adfc98efa2ddbbfd5909",
+    "config/history.json": "13bdca7fe3ee4f8c50f965de0c0929c1d020c12d866d9255a65a5d0b0e03acd1",
+    "docs/execution-input-contract.md": "2b3361b0e2030d83b68589189d862cad52354ac68cccb41d4677cdb34e7720ab",
+    "docs/extensions-review.md": "70d8c5caeb834d7ef5045ab8e0e5700377b3faf87f31e28b0cc17b88e5a3ec67",
+    "docs/prospective-protocol.md": "4198195cb2869d8b654e7a1e7c45dcf1435d7913d8bf463709fd3ab11aa61cc2",
+    "docs/vintage-data.md": "8e92f5839ef2e28c8cbe4f6f699e63ed314c478dad57e9783a7cb91c7c35c6b0",
+    "src/weather_risk/execution.py": "ac077875d7cb2db4d4b312340b0e6d5d8998c37852d8268bfa2d374f983afb5c",
+    "src/weather_risk/historical.py": "d5a59e091c5bf25e2ddd997b63ddada53558ddab5783350fb76c68e6c2fb83af",
+    "src/weather_risk/prospective.py": "cc5e460307e412daf1f2462a4f37cabc31a879571a4cb1471d6e67da0c5b5ab4",
+    "src/weather_risk/vintage_sources.py": "9e9b5d1b3226aceccd63994b2b854aa94b6d9abf99257cd4ff1188f45166c58c",
+    "src/weather_risk/vintages.py": "54d81ae700dcab47098ac4ae3013cc28a8c56a799aa3818837cf815a4ca134d1",
+    "tests/test_execution.py": "bfa7d4f6161bf668b15e9857ee06108b7b43a57adca465fd060e32a18325b941",
+    "tests/test_historical.py": "ee46bd4f41836cb352ad99b20eb13e695fa78f86dfc42c5c1e3e9e4f52c47bce",
+    "tests/test_prospective.py": "959d08340d487e80f72c9f7f92c42296864d3e45beab09569e51afabfaaf64c4",
+    "tests/test_vintage_sources.py": "c4b2377372838d9818f3d6723e899eb96ad0c258f8f0753746c022a22fcf5230",
+    "tests/test_vintages.py": "f1fda19ec87a4a2a64509dfc7c3735dfdf2e43add9022b3467982d3a6945a0be"
+  },
+  "historical": {
+    "artifact_count": 7,
+    "artifacts": {
+      "config.json": "0e63a80f80c50d83e2ddb044f5e4d07d9e0064937fc958ba778c90a0b149087e",
+      "coverage.csv": "60bd798931b5f6324dfad6e3f0fa634ada62543235d52ad8a1878de7b6dc3141",
+      "history_report.md": "e0796f468f70e967af3614ed98e17af668edc08a0f9da4cdec2d724d1f81131e",
+      "observations.csv": "b888017824ff4f623df9e3c6b6418d83ccb52386b95d06dc0215c13b02687759",
+      "source_snapshot.json": "2e6a35ea2f422c4f11759bb29c639edf9970ae5bc87480cb99c2c902efac02ab",
+      "station_metadata.json": "b31d3e8718b1507155bc1da8cabf65727b568523464d6a15a99a89f7752935d2",
+      "validation.json": "9d4360c79b5359ec81dd4f1ca9cc41a736e592c6b2a7ebfc377ad799c5426316"
+    },
+    "cached_requests": 15,
+    "cli_exit_status": 1,
+    "live_eia_rows": {
+      "us_gas_consumption": 300,
+      "us_gas_storage": 835
+    },
+    "manifest_sha256": "32adf41c30ba697db62aacdae0c9244967a190ffbc0ee6b95b668e6879ea9c50",
+    "manifests_byte_identical": true,
+    "observation_rows": 225819,
+    "pinned_replay": "runs/history-20261015T174131.249379Z",
+    "run": "runs/history-20261015T174125.694649Z",
+    "scope": "2000-2025 latest-vintage exploratory staging; zero model fits; no approved training dataset",
+    "series": 29,
+    "status": "validation_failed",
+    "validation_errors": [
+      "henry_hub_spot: missing fraction 0.230 exceeds 0.120",
+      "enb_to_adj_close 2003-05-19: value must be strictly positive",
+      "su_to_adj_close 2001-09-12: value must be strictly positive"
+    ]
+  },
+  "pending": {
+    "alfred_live": "FRED_API_KEY unavailable; implemented and fixture-tested only",
+    "gpu": "Deferred by user; no script or job submitted",
+    "historical_data_acceptance": "Missing gas history, two zero adjusted equity prices, and absent 2008 storage require source investigation and a recorded policy",
+    "intraday_releases": "No verified release archive supplied",
+    "new_evaluation": "Gate implemented; no real protocol frozen or evaluated",
+    "portfolio": "Ledger tested on synthetic data; actual contracts, fills, settlements, FX and calendars needed"
+  },
+  "preservation": {
+    "phase_5_seal_sha256": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
+    "phase_5_seal_verified": true,
+    "phase_7_artifact_hashes_verified": {
+      "notebooks/01_final_evaluation.ipynb": "04fe7d4cf7db00005dcd835692b6ca50c6ddf49e490c478ad4774f665814368b",
+      "notebooks/02_portfolio_sensitivity.ipynb": "b1a45798a64deb3c262b5180fb0a18e20ac20c6ce1db3f71a5f9c248c202ce37",
+      "output/pdf/committee-memo.pdf": "761c9df98e9f854754071eed339e43ce74d3a92f8905fbdd7b6315d2ecae8514",
+      "reports/phase7/committee-memo.md": "45392d625de254916d2c23bae65a328b87074feed3c7d4509240e6c08c4db500",
+      "reports/phase7/dashboard/index.html": "beca3f7ea8d6e05e45d35388354a425b172891aa00cb708fc01224fe9db47c5c"
+    },
+    "phase_change_pdf_sha256": "6245c8ae4c7462538900c81903975e60cc287aa924bed3fec506469ebbb2b37b",
+    "pilot_input_sha256": "38fe5a6e442103f1e8e1cf2a05302a20c3e60ee1cca98e9b9131492584ff581e",
+    "prior_results_retrained": false
+  },
+  "runtime": {
+    "dependency_changes": false,
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.2"
+  },
+  "scope": "Post-pilot local implementations; empirical extension not accepted; GPU deferred",
+  "tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
+    "evidence": "Offline fixtures and accounting identities; no live ALFRED or empirical contract backtest",
+    "extension_tests": 74,
+    "log": "work/extensions-tests.log",
+    "log_sha256": "aae2b0a139f4f669a1e81d0055e9d539d80c3532c3c2f2fe70e45bb3f1b4991f",
+    "passed": 304,
+    "skipped": 0
+  },
+  "verified_at_utc": "2026-10-15T18:28:58.191051+00:00"
+}

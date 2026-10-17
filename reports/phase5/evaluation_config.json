@@ -1,0 +1,82 @@
+{
+  "assets": [
+    "henry_hub_spot",
+    "wti_spot",
+    "canadian_basket"
+  ],
+  "baseline_config": "config/baselines.json",
+  "bootstrap_block_length": 20,
+  "bootstrap_minimum_observations": 100,
+  "bootstrap_replications": 1000,
+  "bootstrap_seed": 1729,
+  "comparison_metrics": [
+    "quantile_loss",
+    "qlike",
+    "fz0"
+  ],
+  "comparison_pairs": [
+    [
+      "garch",
+      "historical"
+    ],
+    [
+      "gjr_garch",
+      "historical"
+    ],
+    [
+      "seasonal_variance",
+      "historical"
+    ],
+    [
+      "weather_variance",
+      "historical"
+    ],
+    [
+      "gru_control",
+      "historical"
+    ],
+    [
+      "gru_weather",
+      "historical"
+    ],
+    [
+      "ssm_control",
+      "historical"
+    ],
+    [
+      "ssm_weather",
+      "historical"
+    ],
+    [
+      "weather_variance",
+      "seasonal_variance"
+    ],
+    [
+      "gru_weather",
+      "gru_control"
+    ],
+    [
+      "ssm_weather",
+      "ssm_control"
+    ]
+  ],
+  "first_access_audit": "docs/phase-5-first-access.json",
+  "model_config": "config/ml.json",
+  "models": [
+    "historical",
+    "garch",
+    "gjr_garch",
+    "seasonal_variance",
+    "weather_variance",
+    "gru_control",
+    "gru_weather",
+    "ssm_control",
+    "ssm_weather"
+  ],
+  "multiple_testing": "Holm separately for each diagnostic family; one family across all score comparisons",
+  "protocol_document": "docs/phase-5-protocol.md",
+  "seal": "docs/phase-5-seal.json",
+  "significance_level": 0.05,
+  "test_end": "2025-12-31",
+  "test_start": "2024-01-01"
+}
