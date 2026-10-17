@@ -55,7 +55,7 @@ jobs:
 
   full-research:
     # Matches the pilot's macOS ARM / Python 3.14 environment; CPU tests only.
-    runs-on: macos-14
+    runs-on: macos-15
     env:
       PYTHONPATH: src
       MPLBACKEND: Agg
