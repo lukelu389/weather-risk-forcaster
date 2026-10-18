@@ -1,0 +1,46 @@
+{
+  "artifacts": {
+    "model_config.json": "fad53981415071230be5cac0a208a8d38681c9c3864baeebd3980f152fbaff22",
+    "portfolio_config.json": "8452920688543d11346dcf6e9f48aded459222db087bfd1bf7483f61e0eef303",
+    "portfolio_report.md": "ee98f7f05eb3c8eab87aac85b92b5e015b969a035e246b07be0326b96a52a95c",
+    "sensitivity_rows.csv": "945b4146a1c033bb89b7ae1988905b9f86d755c17318aa0c9c1f06e80ebcfcdc",
+    "source_snapshot.json": "2704e3e128d396068d484a94a69240d74582afd86e72d9dcdb5f451f86b48940",
+    "summary.csv": "895817d63c2c463a685cf638a5483e98fdae7f21d9591135095bd1b90a6995f8"
+  },
+  "basket_forecast_rows": 9054,
+  "code_sha256": {
+    "eda.py": "08292d70c91134555e165030660daac9191e44801949d50f3f1431f782152d90",
+    "ml.py": "2db3b7f35f3ff731c903f857e86d01f34af5eacad21753b23b0cfd99ed3af0c9",
+    "portfolio.py": "31823178592cfdada2b8d5902db70214da7008cc80a114ccdaf9abde7dffda8b",
+    "portfolio_risk.py": "14fcb92c45debe4e13781f63800b47295f65f00dbf6dcd01529ce0ba77497a9d",
+    "risk.py": "dea8bb656f932070a86eb28561e6b1162a73e3448e898ea91cce03e3934f1e36"
+  },
+  "cost_exceedance_invariant": true,
+  "manifest_equal": true,
+  "matching_artifacts": 6,
+  "missing_realized_sensitivity_rows": 54,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1"
+  },
+  "runs": [
+    "runs/portfolio-20261015T025215.420657Z",
+    "runs/portfolio-20261015T025219.085339Z"
+  ],
+  "sensitivity_rows": 27162,
+  "skipped_sensitivity_rows": 0,
+  "source": {
+    "artifacts": {
+      "design_panel.csv": "e5c8cb4f6cb5f1b52c8befe461ac3556f9c765de47b3f86991a4709f9568482c",
+      "forecasts.csv": "5231450b7b938ea455e7bf37c88b4f353bdbba2957ffb00ba10a74b9bd55ef75",
+      "model_config.json": "fad53981415071230be5cac0a208a8d38681c9c3864baeebd3980f152fbaff22"
+    },
+    "manifest_sha256": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+    "phase": 5,
+    "run_dir": "runs/evaluation-20261014T172855.647818Z",
+    "status": "passed"
+  },
+  "status": "passed",
+  "summary_rows": 162
+}

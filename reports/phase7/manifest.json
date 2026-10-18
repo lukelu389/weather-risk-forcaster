@@ -1,0 +1,28 @@
+{
+  "artifact_root": "repository",
+  "artifacts": {
+    "notebooks/01_final_evaluation.ipynb": "04fe7d4cf7db00005dcd835692b6ca50c6ddf49e490c478ad4774f665814368b",
+    "notebooks/02_portfolio_sensitivity.ipynb": "b1a45798a64deb3c262b5180fb0a18e20ac20c6ce1db3f71a5f9c248c202ce37",
+    "output/pdf/committee-memo.pdf": "761c9df98e9f854754071eed339e43ce74d3a92f8905fbdd7b6315d2ecae8514",
+    "reports/phase7/committee-memo.md": "45392d625de254916d2c23bae65a328b87074feed3c7d4509240e6c08c4db500",
+    "reports/phase7/dashboard/index.html": "beca3f7ea8d6e05e45d35388354a425b172891aa00cb708fc01224fe9db47c5c"
+  },
+  "builder_sha256": "897d6f278eab71db5c3aa2ee509189a1ef6699f3f71bca67cae7a8454736843c",
+  "dashboard_template_sha256": "21f561bbc5b03f081b5530a967fe3420988866085d7c1bdd75db02e9409ea2d9",
+  "manifest_kind": "published_subset",
+  "omitted_original_artifact_count": 0,
+  "original_artifact_count": 5,
+  "original_manifest_sha256": "3df8439caaae004ac440675889c456d17f54a1c16aefbad583b7ed614a35f194",
+  "original_sources": {
+    "docs/phase-5-bootstrap-addendum.md": "759c001c961d60973c863ad5a13f15d26a12480f70d16ed60276f5988698af7f",
+    "docs/phase-5-first-access.json": "bc796a7a2b845189f1261618fa274a110d595093b875d925b560a7d15b148c3b",
+    "docs/phase-5-seal.json": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
+    "reports/phase5-sensitivity/manifest.json": "b37924588c7acd40b75457e839ab477f6dcc7d8298fbcbef1f4e4d09f6010f80",
+    "reports/phase5/manifest.json": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+    "reports/phase6/manifest.json": "01fef6cfc61352ecf52a6bb5f479a62391cba024ad0eb0285f72f9e8db40fa26"
+  },
+  "phase": 7,
+  "publication_note": "Derived public manifest: hashes cover included files only; workstation prefixes removed. Other provenance hashes refer to the original experiment, not corrected release source. The full private run is not distributed.",
+  "scope": "Communication of preserved results; no new model fitting or trading performance.",
+  "status": "passed"
+}

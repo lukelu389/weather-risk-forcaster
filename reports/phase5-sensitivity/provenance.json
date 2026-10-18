@@ -1,0 +1,87 @@
+{
+  "analysis_type": "post_exposure_computational_resolution_correction",
+  "changed_evaluation_setting": {
+    "bootstrap_replications": {
+      "after": 19999,
+      "before": 1000
+    }
+  },
+  "forecasts_retuned": false,
+  "interpretation": "Post-exposure sensitivity, not a new untouched confirmatory experiment. CSV rounding can change arithmetic within the documented tolerance; counts must match exactly.",
+  "invariance_checks": {
+    "calibration": {
+      "checked_columns": [
+        "grid_rows",
+        "common_scored_rows",
+        "excluded_rows",
+        "missing_realized_rows",
+        "nonpositive_es_rows",
+        "exceedances",
+        "exceedance_rate",
+        "nominal_exceedances",
+        "coverage_ci_low",
+        "coverage_ci_high",
+        "adjacent_pairs",
+        "n00",
+        "n01",
+        "n10",
+        "n11",
+        "es_residual_mean",
+        "es_score_rows",
+        "unconditional_pvalue",
+        "unconditional_reason",
+        "unconditional_lr",
+        "exact_pvalue",
+        "exact_reason",
+        "independence_pvalue",
+        "independence_reason",
+        "independence_lr",
+        "conditional_pvalue",
+        "conditional_reason",
+        "conditional_lr",
+        "mean_quantile_loss",
+        "quantile_loss_rows",
+        "mean_qlike",
+        "qlike_rows",
+        "mean_fz0",
+        "fz0_rows",
+        "exact_pvalue_holm",
+        "independence_pvalue_holm",
+        "conditional_pvalue_holm"
+      ],
+      "integer_counts_match_exactly": true,
+      "maximum_absolute_numeric_difference": 4.970956979377661e-11,
+      "numeric_tolerance": 1e-08,
+      "rows": 54
+    },
+    "paired": {
+      "checked_columns": [
+        "grid_rows",
+        "observations",
+        "mean",
+        "block_length",
+        "seed"
+      ],
+      "integer_counts_match_exactly": true,
+      "maximum_absolute_numeric_difference": 8.913536575505532e-12,
+      "numeric_tolerance": 1e-08,
+      "rows": 165
+    }
+  },
+  "models_refitted": false,
+  "primary_artifact_sha256": {
+    "calibration_scores.csv": "f6f3fdda855d75edc5a3e8bb7ecd3665b48805876f9c6d03ec2cbf23a97da183",
+    "evaluation_config.json": "a962d967f6c87eef5ce7fadf78a64789646b605d7ab7ccff5099bb78d3761762",
+    "forecasts.csv": "5231450b7b938ea455e7bf37c88b4f353bdbba2957ffb00ba10a74b9bd55ef75",
+    "paired_comparisons.csv": "7d49800dffa55b1e381b2feb3b43cc1351784c80a336843b723731954dac513d",
+    "protocol_seal.json": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
+    "requirements-ml.lock.txt": "3b1a334db34afcd5b77368ef54174e7ee7a0c11faf2c5af630024d2ba164b0a4",
+    "source_snapshot.json": "ba29b8e7a644d3d48365012bbd77a1953e749fec2fdd057c2fd29e7a52859e42"
+  },
+  "primary_manifest_sha256": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+  "primary_protocol_seal_sha256": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
+  "primary_run": "runs/evaluation-20261014T172855.647818Z",
+  "protocol_addendum_sha256": "759c001c961d60973c863ad5a13f15d26a12480f70d16ed60276f5988698af7f",
+  "reason": "Post-exposure correction of insufficient p-value resolution under the prespecified Holm families; no forecast refitting or model selection.",
+  "source_csv_significant_digits": 12
+}

@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "change": "Removed workstation prefix from paths; numeric results unchanged.",
+      "original_sha256": "639066547cc27b9bc0594a7ba99789ace3ef6d69df22a9627ac5da6f30dd59d8",
+      "path": "docs/phase-4-verification.json",
+      "public_sha256": "562135c53f05a7fad87af154c8ff6759c0c9a1237b0b6893b3429586e9b47e88"
+    },
+    {
+      "change": "Removed workstation prefix from paths; numeric results unchanged.",
+      "original_sha256": "b42affbbb4a981b7a2329a7e770e55a4345225897eb1ce22b47ebb3160abe49d",
+      "path": "docs/phase-5-verification.json",
+      "public_sha256": "7c9eca4cdf978e602f30ca06fee4f250f564385d7ad50a2aa632285e213de2c0"
+    },
+    {
+      "change": "Removed workstation prefix from paths; numeric results unchanged.",
+      "original_sha256": "07c9b66fc8664b8ab9bbf06196e2dcb007e6b4400ad2f532d7da65c031b72dd9",
+      "path": "docs/phase-6-verification.json",
+      "public_sha256": "1f7e1190699d0edf7c696f6b6fe5b0891fbf5e905fe3e258c85f64c08f1ee1ee"
+    },
+    {
+      "change": "Removed workstation prefix from paths; numeric results unchanged.",
+      "original_sha256": "56a15f89dbe9580cfb2a290aaca5bb2b2034f225c817451ea812add724a36ab4",
+      "path": "reports/phase2/analysis_config.json",
+      "public_sha256": "e67e4db594412d154a033723e9aca7c167e2ff95afef2d3d924c45e1c07c7b7c"
+    },
+    {
+      "change": "Removed workstation prefix from paths; numeric results unchanged.",
+      "original_sha256": "b2dc87c8fe0989c7c7d1a15444d3f2135e2a7cf84060139b4e4d061a6673e827",
+      "path": "reports/phase3/baseline_config.json",
+      "public_sha256": "4fa08df7bfd7b14a4ae6eda4f0a71f62cb66c62c92ff5977bc23d6a15b40fc99"
+    },
+    {
+      "change": "Published-subset manifest, original manifest digest retained; private absolute paths removed.",
+      "original_sha256": "32adf41c30ba697db62aacdae0c9244967a190ffbc0ee6b95b668e6879ea9c50",
+      "path": "reports/extensions/manifest.json",
+      "public_sha256": "437694893c331d1e1ce1b4b092e013fa513fabc3d74dc87718e63b3b9bcde3d9"
+    },
+    {
+      "change": "Published-subset manifest, original manifest digest retained; private absolute paths removed.",
+      "original_sha256": "65d64e56ed1b116b269f0182635d43052879b9503fa0cf46b7c7038236e98d7f",
+      "path": "reports/phase2/manifest.json",
+      "public_sha256": "1212030686c9c4bbc2307e0fd2b8f3c53dd99bd4a8bd2ac19d7be56270d37f88"
+    },
+    {
+      "change": "Published-subset manifest, original manifest digest retained; private absolute paths removed.",
+      "original_sha256": "205a22b19d2b25b7fcd1f3d646c0287a622e758c1a5ea94d45cd22c1e707b4a7",
+      "path": "reports/phase3/manifest.json",
+      "public_sha256": "f543ddc83da0ac53d6a646964845fe7f479843e8622a374b47518fa8769230f9"
+    },
+    {
+      "change": "Published-subset manifest, original manifest digest retained; private absolute paths removed.",
+      "original_sha256": "03cc42c8433a6d40aaef68bcc9c5f37f8e7a7aa7312a8fb4f111306bf05a20fd",
+      "path": "reports/phase4/manifest.json",
+      "public_sha256": "60b06eea737f5d95fe6714638567b9cb996c7f5c8a5e5948b3331a0079ce2b42"
+    },
+    {
+      "change": "Published-subset manifest, original manifest digest retained; private absolute paths removed.",
+      "original_sha256": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+      "path": "reports/phase5/manifest.json",
+      "public_sha256": "79c35ba2146956433e69830b177a195632fbdef7e1d01bb641f31fd305c412e9"
+    },
+    {
+      "change": "Published-subset manifest, original manifest digest retained; private absolute paths removed.",
+      "original_sha256": "b37924588c7acd40b75457e839ab477f6dcc7d8298fbcbef1f4e4d09f6010f80",
+      "path": "reports/phase5-sensitivity/manifest.json",
+      "public_sha256": "aa126e56784b949dfc25ef8840f9fd6e7977c626bafa099c85bd08f104da5d52"
+    },
+    {
+      "change": "Published-subset manifest, original manifest digest retained; private absolute paths removed.",
+      "original_sha256": "01fef6cfc61352ecf52a6bb5f479a62391cba024ad0eb0285f72f9e8db40fa26",
+      "path": "reports/phase6/manifest.json",
+      "public_sha256": "4eed16a0545be28901aba6df77107c505cfc9f04e76b7af0320677e6f948e94c"
+    },
+    {
+      "change": "Published-subset manifest, original manifest digest retained; private absolute paths removed.",
+      "original_sha256": "3df8439caaae004ac440675889c456d17f54a1c16aefbad583b7ed614a35f194",
+      "path": "reports/phase7/manifest.json",
+      "public_sha256": "c81078a70004adb28e2ad90c735b0715544b3707f4f76731ce159d7005b6ef31"
+    }
+  ],
+  "scope": "Public provenance transformations only. Original workspace files remain unchanged."
+}

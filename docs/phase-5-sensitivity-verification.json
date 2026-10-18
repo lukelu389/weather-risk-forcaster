@@ -1,0 +1,117 @@
+{
+  "analysis_type": "post_exposure_computational_resolution_correction",
+  "artifacts": {
+    "bootstrap_sensitivity.py": "c830db060aced7e27fa4f48a6bf3cdad613498f3d47ff155636bbf5c50753eef",
+    "calibration_scores.csv": "986c9f1bdf022e1d28b3ac352932bb036672f87fc33e0fdeb57300534d7d7167",
+    "effective_evaluation_config.json": "f89f5e3e1c1e4c7fc3c2e78eecad0a527a174cd06a1deec88b9ab64d751bf049",
+    "paired_comparisons.csv": "338c8bded6f1a1290d458aed6ea34e3c8cc57539687fe6e26c29db710da44548",
+    "primary_evaluation_config.json": "a962d967f6c87eef5ce7fadf78a64789646b605d7ab7ccff5099bb78d3761762",
+    "primary_manifest.json": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+    "primary_protocol_seal.json": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
+    "primary_source_snapshot.json": "ba29b8e7a644d3d48365012bbd77a1953e749fec2fdd057c2fd29e7a52859e42",
+    "protocol_addendum.md": "759c001c961d60973c863ad5a13f15d26a12480f70d16ed60276f5988698af7f",
+    "provenance.json": "26d9c8b26b7cd19b5db779bfe54fb688cd094cf6dc39faea47fc737704ab1829",
+    "rejection_summary.json": "5cc8087c2f9a8e03d7e0e8954b057c16c0035c811247328c8148610ca2d0dd83",
+    "requirements-ml.lock.txt": "3b1a334db34afcd5b77368ef54174e7ee7a0c11faf2c5af630024d2ba164b0a4",
+    "sensitivity_config.json": "e286262edd4b015e2abc8cce9bb6e068f9171090fc5237c8ad2331dd7da803c6",
+    "sensitivity_report.md": "00ac04cdf2e296fb6b1e73a2a7d6996de8fa369e07d856f20085c2cd0e6bcbb2"
+  },
+  "byte_identical_artifacts": 14,
+  "calibration_tests": 54,
+  "focused_test_command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -p test_bootstrap_sensitivity.py -v",
+  "focused_test_sha256": "6a870f0e69bde132e6d59f7146f37a86e37f9e36f5ec609c8cb77a2df0292fbf",
+  "focused_tests": 7,
+  "identical_manifests": true,
+  "invariance_checks": {
+    "calibration": {
+      "checked_columns": [
+        "grid_rows",
+        "common_scored_rows",
+        "excluded_rows",
+        "missing_realized_rows",
+        "nonpositive_es_rows",
+        "exceedances",
+        "exceedance_rate",
+        "nominal_exceedances",
+        "coverage_ci_low",
+        "coverage_ci_high",
+        "adjacent_pairs",
+        "n00",
+        "n01",
+        "n10",
+        "n11",
+        "es_residual_mean",
+        "es_score_rows",
+        "unconditional_pvalue",
+        "unconditional_reason",
+        "unconditional_lr",
+        "exact_pvalue",
+        "exact_reason",
+        "independence_pvalue",
+        "independence_reason",
+        "independence_lr",
+        "conditional_pvalue",
+        "conditional_reason",
+        "conditional_lr",
+        "mean_quantile_loss",
+        "quantile_loss_rows",
+        "mean_qlike",
+        "qlike_rows",
+        "mean_fz0",
+        "fz0_rows",
+        "exact_pvalue_holm",
+        "independence_pvalue_holm",
+        "conditional_pvalue_holm"
+      ],
+      "integer_counts_match_exactly": true,
+      "maximum_absolute_numeric_difference": 4.970956979377661e-11,
+      "numeric_tolerance": 1e-08,
+      "rows": 54
+    },
+    "paired": {
+      "checked_columns": [
+        "grid_rows",
+        "observations",
+        "mean",
+        "block_length",
+        "seed"
+      ],
+      "integer_counts_match_exactly": true,
+      "maximum_absolute_numeric_difference": 8.913536575505532e-12,
+      "numeric_tolerance": 1e-08,
+      "rows": 165
+    }
+  },
+  "paired_comparisons": 165,
+  "phase": "5-bootstrap-sensitivity",
+  "primary_manifest_sha256": "035e03774a23a67409afe2709d4611ad85fe607e4d29c6380673ec6768b2720d",
+  "primary_protocol_seal_sha256": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
+  "rejection_summary": [
+    {
+      "family": "ES residual",
+      "first_holm_threshold_5pct": 0.000925925925925926,
+      "hypotheses": 54,
+      "primary_adjusted_rejections_5pct": 0,
+      "primary_minimum_raw_pvalue": 0.000999000999000999,
+      "sensitivity_adjusted_rejections_5pct": 3,
+      "sensitivity_minimum_raw_pvalue": 5e-05,
+      "sensitivity_unavailable_tests": 0
+    },
+    {
+      "family": "Paired scores",
+      "first_holm_threshold_5pct": 0.00030303030303030303,
+      "hypotheses": 165,
+      "primary_adjusted_rejections_5pct": 0,
+      "primary_minimum_raw_pvalue": 0.000999000999000999,
+      "sensitivity_adjusted_rejections_5pct": 1,
+      "sensitivity_minimum_raw_pvalue": 5e-05,
+      "sensitivity_unavailable_tests": 0
+    }
+  ],
+  "replications": 19999,
+  "runs": [
+    "runs/bootstrap-sensitivity-20261015T025217.243982Z",
+    "runs/bootstrap-sensitivity-20261015T025226.218434Z"
+  ],
+  "status": "passed"
+}

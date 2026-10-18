@@ -1,0 +1,8 @@
+{
+  "first_access_attempt_at_utc": "2026-10-14T17:28:53.949052+00:00",
+  "meaning": "Written before first final-period numeric parse; a failed attempt still consumes the gate.",
+  "phase": 5,
+  "seal_sha256": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
+  "test_end": "2025-12-31",
+  "test_start": "2024-01-01"
+}

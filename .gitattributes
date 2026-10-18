@@ -1,0 +1,7 @@
+# Artifact hashes bind exact bytes: disable automatic line-ending conversion.
+* -text
+*.pdf binary
+*.png binary
+*.gz binary
+# Preserve the original CSV record terminators without whitespace false positives.
+reports/extensions/coverage.csv whitespace=cr-at-eol

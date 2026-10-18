@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather risk research | Final evaluation</title>
+<style>
+:root{color-scheme:light;--ink:#18354a;--muted:#536776;--line:#d8e2e7;--paper:#f5f8fa;--blue:#367da3;--accent:#b46727}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:15px/1.55 system-ui,-apple-system,sans-serif}main{max-width:1240px;margin:auto;padding:38px 32px 60px}header{border-bottom:1px solid var(--line);padding-bottom:24px}.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}h1{font-size:36px;line-height:1.15;letter-spacing:-.03em;margin:12px 0}h2{font-size:22px;margin:0 0 8px}p{max-width:960px;margin:10px 0;color:var(--muted)}.lead{font-size:17px}.audit{display:flex;gap:26px;flex-wrap:wrap;margin-top:20px;font-size:13px}.audit strong{display:block;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:25px 0 22px}button,select{font:inherit;border:1px solid var(--line);border-radius:5px;padding:9px 14px;background:white;color:var(--ink)}button{cursor:pointer}button[aria-pressed=true]{background:var(--ink);color:white;border-color:var(--ink)}button:focus-visible,select:focus-visible{outline:3px solid #d89b4f;outline-offset:3px}.controls{display:flex;gap:18px;flex-wrap:wrap;align-items:end;margin:20px 0}label{font-size:12px;color:var(--muted);display:flex;gap:6px;flex-direction:column}select{min-width:150px;font-size:14px}.panel{background:white;padding:26px;border:1px solid var(--line);border-radius:8px}.caption{font-size:13px}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;margin-top:20px;font-size:13px}th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}th:first-child,td:first-child{text-align:left}th{font-weight:600;color:var(--muted)}tbody tr:hover{background:#f1f6f9}.plot{margin-top:24px;display:grid;gap:8px}.barrow{display:grid;grid-template-columns:150px 1fr 80px;gap:12px;align-items:center;font-size:13px}.track{height:23px;position:relative;background:#eff3f5}.bar{height:100%;background:var(--blue)}.marker{position:absolute;top:-4px;bottom:-4px;border-left:2px dashed var(--accent)}.number{text-align:right;font-variant-numeric:tabular-nums}.scale{display:flex;justify-content:space-between;margin:8px 90px 0 162px;color:var(--muted);font-size:12px}details{margin-top:24px;padding-top:15px;border-top:1px solid var(--line)}summary{cursor:pointer;font-weight:600}footer{font-size:12px;color:var(--muted);margin-top:22px}.status{border-left:3px solid var(--accent);padding-left:13px;margin-top:18px}.hidden{display:none!important}@media(max-width:650px){main{padding:24px 14px}h1{font-size:29px}.panel{padding:17px}.barrow{grid-template-columns:120px 1fr 60px;gap:6px;font-size:11px}.scale{margin-left:126px;margin-right:66px}.audit{gap:18px}select{max-width:100%;min-width:0}label{width:100%}}
+</style>
+</head>
+<body><main>
+<header><div class="eyebrow">Weather risk forecaster · Research review</div><h1>What survives the final sample?</h1>
+<p class="lead">Nine fixed models, three assets, and a preserved 2024–2025 evaluation. Explore calibration, matched weather effects, and a separate CAD basket sensitivity.</p>
+<div class="audit"><div><strong>9 models</strong>All retained</div><div><strong>27,882 forecasts</strong>No failed or skipped forecasts</div><div><strong>617 artifacts</strong>Identical across two complete runs</div></div>
+<p class="status">Research-only evidence. Latest-vintage data and assumed availability prevent a historical point-in-time trading claim.</p></header>
+<nav class="tabs" aria-label="Research view"><button data-view="coverage" aria-pressed="true">Risk coverage</button><button data-view="weather" aria-pressed="false">Weather comparisons</button><button data-view="portfolio" aria-pressed="false">CAD basket sensitivity</button></nav>
+<section class="panel"><h2 id="panel-title">Risk coverage</h2><p id="description"></p>
+<div class="controls"><label id="asset-label">Asset<select id="asset"><option value="henry_hub_spot">Henry Hub spot</option><option value="wti_spot">WTI spot</option><option value="canadian_basket">Canadian equity basket</option></select></label><label>Risk level<select id="level"><option value="0.95">95%</option><option value="0.99">99%</option></select></label><label id="inference-label">Evaluation<select id="inference"><option value="sensitivity">19,999 draws · post-exposure sensitivity</option><option value="primary">1,000 draws · sealed primary</option></select></label><label id="cost-label" class="hidden">Total interval cost budget<select id="cost"><option value="0">0 bp · CAD 0</option><option value="5">5 bp · CAD 500</option><option value="10">10 bp · CAD 1,000</option></select></label><label id="period-label" class="hidden">Calendar period<select id="period"><option value="all">2024–2025</option><option value="2024">2024</option><option value="2025">2025</option></select></label></div>
+<div id="result" aria-live="polite"></div><p class="caption" id="caption"></p>
+</section>
+<details><summary>Read the experiment limits</summary><p>The final holdout is consumed. Rolling fits admit previous final-period labels only after maturity. Missing quote rows remain missing, and the horizon follows variable quote intervals. WTI uses USD/barrel changes; other targets use percentage log returns. Scores cannot be ranked across those units.</p><p>The original 1,000-draw bootstrap cannot attain p-values below the first Holm thresholds for its 165 score comparisons or 54 ES diagnostics. The 19,999-draw correction preserves every model, hypothesis, block rule and seed and is labelled post-exposure. Non-rejection does not establish equivalence or calibration.</p><p>CAD sensitivities reset CAD 1 million at each interval start with four equal equity weights. Costs are fixed budgets applied to both realized and forecast losses. This is not compounded wealth, a futures/FX portfolio, or estimated transaction-cost performance. The pilot does not cover 2008 or 2014–2016.</p></details>
+<footer>Source: verified local Phase 5 primary and supplementary outputs, and Phase 6 sensitivity. This page makes no network requests. The README contains reproduction commands and evidence.</footer>
+</main>
+<script id="research-data" type="application/json">__RESEARCH_DATA__</script>
+<script>
+"use strict";
+const data=JSON.parse(document.getElementById("research-data").textContent);
+const labels={historical:"Historical",garch:"GARCH",gjr_garch:"GJR-GARCH",seasonal_variance:"Seasonal regression",weather_variance:"Weather regression",gru_control:"GRU control",gru_weather:"GRU weather",ssm_control:"SSM control",ssm_weather:"SSM weather"};
+let view="coverage";
+const get=id=>document.getElementById(id), fmt=(v,d=3)=>v===null||v===undefined?"Unavailable":Number(v).toLocaleString("en-CA",{minimumFractionDigits:d,maximumFractionDigits:d});
+const pvalue=v=>v===null||v===undefined?"Unavailable":v>0&&v<.001?Number(v).toExponential(2):fmt(v);
+function table(headers,rows){return '<div class="table-wrap"><table><thead><tr>'+headers.map(x=>`<th scope="col">${x}</th>`).join("")+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map((v,i)=>i===0?`<th scope="row">${v}</th>`:`<td>${v}</td>`).join("")+'</tr>').join("")+'</tbody></table></div>';}
+function render(){
+ const asset=get("asset").value,level=Number(get("level").value),supp=get("inference").value==="sensitivity";
+ const isBook=view==="portfolio";
+ get("asset-label").classList.toggle("hidden",isBook);get("inference-label").classList.toggle("hidden",isBook);
+ get("cost-label").classList.toggle("hidden",!isBook);get("period-label").classList.toggle("hidden",!isBook);
+ let html="";
+ if(view==="coverage"){
+  const rows=(supp?data.sensitivity:data.primary).filter(r=>r.asset===asset&&r.confidence===level), nominal=100*(1-level);
+  const max=Math.max(nominal*1.3,...rows.map(r=>100*r.exceedance_rate))*1.12;
+  get("panel-title").textContent="Risk coverage";
+  get("description").textContent=`Shared dates: ${rows[0].common_scored_rows}. Dashed line: nominal ${fmt(nominal,0)}% exceedance rate. Both too many and too few breaches can indicate miscalibration.`;
+  html='<div class="plot" role="img" aria-label="Exceedance rates by model with nominal rate marked">'+rows.map(r=>`<div class="barrow"><span>${labels[r.model]}</span><div class="track"><div class="bar" style="width:${10000*r.exceedance_rate/max}%"></div><div class="marker" style="left:${100*nominal/max}%"></div></div><span class="number">${fmt(100*r.exceedance_rate,2)}%</span></div>`).join("")+'</div><div class="scale"><span>0%</span><span>'+fmt(max,1)+'%</span></div>';
+  html+=table(["Model","Breaches","Exact coverage p*","Independence p*","ES residual p*"],rows.map(r=>[labels[r.model],fmt(r.exceedances,0),pvalue(r.exact_pvalue_holm),pvalue(r.independence_pvalue_holm),pvalue(r.es_pvalue_holm)]));
+  get("caption").textContent="p* denotes separate-family Holm-adjusted p-values. Independence uses adjacent valid original-grid pairs. ES is evaluated jointly with VaR; non-rejection is not approval. "+(supp?"ES inference shown uses the disclosed 19,999-draw correction.":"Primary ES non-rejections are constrained by insufficient bootstrap resolution.");
+ }else if(view==="weather"){
+  const rows=(supp?data.sensitivity_pairs:data.paired).filter(r=>r.asset===asset&&r.confidence===level&&r.reference!=="historical"&&r.metric==="quantile_loss");
+  get("panel-title").textContent="Incremental weather effect";get("description").textContent="Weather minus matched control quantile loss. Negative favors weather; positive favors the control. Values retain each asset's target units.";
+  html=table(["Weather model","Mean difference","95% interval low","95% interval high","Holm p*"],rows.map(r=>[labels[r.candidate],fmt(r.mean,5),fmt(r.ci_low,5),fmt(r.ci_high,5),pvalue(r.pvalue_holm)]));
+  get("caption").textContent="Intervals are pointwise moving-block intervals, not multiplicity-adjusted. Holm uses all 165 prespecified comparisons, including those not displayed in this matched-weather view. "+(supp?"Post-exposure correction: 19,999 draws; fixed models and hypotheses.":"Primary: 1,000 draws cannot support a Holm rejection in this family.");
+ }else{
+  const cost=Number(get("cost").value),period=get("period").value;
+  const rows=data.portfolio.filter(r=>String(r.period)===period&&r.confidence===level&&r.cost_bps===cost);
+  get("panel-title").textContent="Independent CAD 1 million intervals";get("description").textContent="25% each in ENB.TO, SU.TO, FTS.TO and EMA.TO. Exact monetary tail transformation, with a fixed total interval cost budget. No compounded NAV or trading claim.";
+  html=table(["Model","Scored intervals","Mean VaR (CAD)","Mean ES (CAD)","Worst loss (CAD)","Breach rate"],rows.map(r=>[labels[r.model],fmt(r.scored_rows,0),fmt(r.mean_var_cad,0),fmt(r.mean_es_cad,0),fmt(r.worst_realized_loss_cad,0),fmt(100*r.exceedance_rate,2)+"%"]));
+  get("caption").textContent="Mean risk uses finite forecasts; realized loss and breach rates exclude missing outcomes. Adding the same deterministic cost to realized loss and forecasts preserves breaches. Calendar slices are descriptive, not crisis regimes.";
+ }
+ get("result").innerHTML=html;
+}
+document.querySelectorAll("button[data-view]").forEach(button=>button.addEventListener("click",()=>{view=button.dataset.view;document.querySelectorAll("button[data-view]").forEach(b=>b.setAttribute("aria-pressed",String(b===button)));render();}));
+document.querySelectorAll("select").forEach(select=>select.addEventListener("change",render));render();
+</script></body></html>

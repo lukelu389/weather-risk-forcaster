@@ -1,0 +1,2 @@
+# Optional Yahoo adapter. Core ingestion, demo and tests use only the standard library.
+yfinance==0.2.66

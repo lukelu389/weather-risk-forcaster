@@ -84,6 +84,54 @@ class ValidationTests(unittest.TestCase):
                 self.assertEqual(result["series"]["weather"]["expected_period_count"], expected)
                 self.assertEqual(result["series"]["weather"]["missing_period_count"], expected - 1)
 
+    def test_sparse_business_series_fails_independent_coverage_ceiling(self):
+        result = self.report([observation()],
+                             [spec(frequency="business_daily", max_missing_fraction=1,
+                                   max_coverage_missing_fraction=0.12)], end="2024-01-31")
+        stats = result["series"]["weather"]
+        self.assertFalse(result["passed"])
+        self.assertEqual(stats["expected_period_count"], 23)
+        self.assertEqual(stats["missing_period_count"], 22)
+        self.assertEqual(stats["missing_fraction"], 0)
+        self.assertTrue(any("coverage missing fraction" in error for error in result["errors"]))
+
+    def test_coverage_ceiling_applies_to_weekly_and_monthly_periods(self):
+        for frequency in ("weekly", "monthly"):
+            with self.subTest(frequency=frequency):
+                result = self.report([observation(), observation("2024-01-02")],
+                                     [spec(frequency=frequency, max_coverage_missing_fraction=0.1)],
+                                     end="2024-02-29")
+                self.assertFalse(result["passed"])
+                self.assertEqual(result["series"]["weather"]["observed_period_count"], 1)
+
+    def test_optional_coverage_failure_warns_and_preserves_rows(self):
+        rows = [observation()]
+        result = self.report(rows, [spec(frequency="business_daily", required=False,
+                                        max_coverage_missing_fraction=0.12)], end="2024-01-31")
+        self.assertTrue(result["passed"])
+        self.assertTrue(any("coverage missing fraction" in warning for warning in result["warnings"]))
+        self.assertEqual(result["series"]["weather"]["row_count"], len(rows))
+
+    def test_coverage_ceiling_allows_holiday_and_accepts_exact_boundary(self):
+        # Nine of ten weekdays: one closure remains below the configured 12% ceiling.
+        days = ["2024-01-02", "2024-01-03", "2024-01-04", "2024-01-05",
+                "2024-01-08", "2024-01-09", "2024-01-10", "2024-01-11", "2024-01-12"]
+        for ceiling in (0.12, 0.1):
+            with self.subTest(ceiling=ceiling):
+                result = self.report([observation(day) for day in days],
+                                     [spec(frequency="business_daily", max_coverage_missing_fraction=ceiling)],
+                                     end="2024-01-12")
+                self.assertTrue(result["passed"])
+                self.assertEqual(result["series"]["weather"]["coverage_missing_fraction"], 0.1)
+
+    def test_invalid_coverage_ceiling_is_rejected(self):
+        for value in (True, False, None, float("nan"), float("inf"), float("-inf"), -0.1, 1.1, "bad"):
+            with self.subTest(value=value):
+                result = self.report([observation()], [spec(max_coverage_missing_fraction=value)])
+                self.assertFalse(result["passed"])
+                self.assertTrue(any("invalid configuration" in error for error in result["errors"]))
+                json.dumps(result, allow_nan=False)
+
     def test_units_and_physical_bounds_reject(self):
         for row in (observation(unit="degF"), observation(value=100), observation(value=-100)):
             with self.subTest(row=row):

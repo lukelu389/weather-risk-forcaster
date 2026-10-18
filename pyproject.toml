@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "weather-risk-forecaster"
 version = "0.1.0"
-description = "Auditable weather and energy risk research: Phase 1 data foundation"
+description = "Auditable weather and energy tail-risk research with reproducible model comparisons"
 requires-python = ">=3.11"
 dependencies = []
 

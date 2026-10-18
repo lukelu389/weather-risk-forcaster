@@ -1,0 +1,75 @@
+{
+  "seed": 1729,
+  "input_run": "runs/live-20261013T183642.101447Z",
+  "input_observations_sha256": "38fe5a6e442103f1e8e1cf2a05302a20c3e60ee1cca98e9b9131492584ff581e",
+  "analysis_start": "2018-01-01",
+  "analysis_end": "2021-12-31",
+  "tuning_start": "2022-01-01",
+  "tuning_end": "2023-12-31",
+  "test_start": "2024-01-01",
+  "test_end": "2025-12-31",
+  "max_gap_days": 4,
+  "weather_reference_minimum": 20,
+  "prices": [
+    {
+      "series_id": "henry_hub_spot",
+      "label": "Henry Hub spot",
+      "transform": "log_pct",
+      "unit": "log return (%)"
+    },
+    {
+      "series_id": "wti_spot",
+      "label": "WTI spot",
+      "transform": "difference",
+      "unit": "USD/barrel change"
+    },
+    {
+      "series_id": "enb_to_adj_close",
+      "label": "ENB.TO",
+      "transform": "log_pct",
+      "unit": "log return (%)",
+      "equity": true
+    },
+    {
+      "series_id": "su_to_adj_close",
+      "label": "SU.TO",
+      "transform": "log_pct",
+      "unit": "log return (%)",
+      "equity": true
+    },
+    {
+      "series_id": "fts_to_adj_close",
+      "label": "FTS.TO",
+      "transform": "log_pct",
+      "unit": "log return (%)",
+      "equity": true
+    },
+    {
+      "series_id": "ema_to_adj_close",
+      "label": "EMA.TO",
+      "transform": "log_pct",
+      "unit": "log return (%)",
+      "equity": true
+    }
+  ],
+  "assets": [
+    "henry_hub_spot",
+    "wti_spot",
+    "canadian_basket"
+  ],
+  "train_window": 756,
+  "minimum_train": 252,
+  "recent_window": 21,
+  "refit": "monthly",
+  "ridge": 1.0,
+  "confidences": [
+    0.95,
+    0.99
+  ],
+  "weather_columns": [
+    "toronto_hdd18",
+    "toronto_cdd18",
+    "calgary_hdd18",
+    "calgary_cdd18"
+  ]
+}

@@ -38,10 +38,13 @@ def validate_observations(
 ) -> dict:
     """Check a requested inclusive date range and return a JSON-safe report.
 
-    Daily series have a full calendar coverage requirement. For other frequencies,
-    absent weekdays/weeks/months are warnings: exchange holidays and release
-    calendars are not inferred here. Their explicit null values still obey the
-    missing-value threshold. Price jumps are warnings, never corrected data.
+    Daily series count absent dates and explicit nulls toward max_missing_fraction.
+    Other frequencies count explicit nulls separately from absent periods. Set
+    max_coverage_missing_fraction to enforce an independent absent-period ceiling;
+    without it, absent periods only warn, preserving existing configurations.
+    Weekdays and boundary weeks/months approximate coverage, not exchange or
+    release calendars; choose a ceiling that allows legitimate closure periods.
+    Price jumps are warnings, never corrected data.
     """
     report: dict = {"errors": [], "warnings": [], "series": {}, "passed": False}
     errors, warnings = report["errors"], report["warnings"]
@@ -81,6 +84,14 @@ def validate_observations(
             maximum_missing = float(spec.get("max_missing_fraction", 0.1))
             if not 0 <= maximum_missing <= 1:
                 raise ValueError("max_missing_fraction must be in [0, 1]")
+            maximum_coverage_missing = None
+            if "max_coverage_missing_fraction" in spec:
+                raw_coverage = spec["max_coverage_missing_fraction"]
+                if isinstance(raw_coverage, bool):
+                    raise ValueError("max_coverage_missing_fraction must be a finite number in [0, 1]")
+                maximum_coverage_missing = float(raw_coverage)
+                if not math.isfinite(maximum_coverage_missing) or not 0 <= maximum_coverage_missing <= 1:
+                    raise ValueError("max_coverage_missing_fraction must be a finite number in [0, 1]")
         except (TypeError, ValueError, ZoneInfoNotFoundError) as exc:
             errors.append(f"{identifier}: invalid configuration: {exc}")
             continue
@@ -174,6 +185,7 @@ def validate_observations(
             "missing_period_count": len(missing_periods),
             "missing_periods_sample": missing_periods[:20],
             "coverage_missing_fraction": coverage_missing_fraction,
+            "max_coverage_missing_fraction": maximum_coverage_missing,
             "missing_fraction": missing_fraction,
             "max_missing_fraction": maximum_missing,
             "first_date": min(valid_dates).isoformat() if valid_dates else None,
@@ -185,6 +197,10 @@ def validate_observations(
         if missing_periods:
             qualifier = "; weekday calendar does not account for market holidays" if frequency == "business_daily" else ""
             warnings.append(f"{identifier}: {len(missing_periods)} missing {frequency} periods{qualifier}")
+        if maximum_coverage_missing is not None and coverage_missing_fraction > maximum_coverage_missing:
+            message = (f"{identifier}: coverage missing fraction {coverage_missing_fraction:.3f} "
+                       f"exceeds {maximum_coverage_missing:.3f}")
+            (errors if required else warnings).append(message)
         if null_count:
             warnings.append(f"{identifier}: {null_count} explicit missing values; retained as null")
         if missing_fraction > maximum_missing:
