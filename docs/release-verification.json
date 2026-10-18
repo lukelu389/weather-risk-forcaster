@@ -26,7 +26,7 @@
     "tool": "pip-audit2.10.1"
   },
   "empirical_models_refitted": false,
-  "full_test_environment_note": "Python3.14.2 macOS ARM64; isolated PyTorch2.13.0 over the existing research dependencies. All41 installed versions checked against active lock. A fresh hosted dependency install remains for CI.",
+  "full_test_environment_note": "Python3.14.2 macOS ARM64; isolated PyTorch2.13.0 over the existing research dependencies. All41 installed versions checked against active lock. A fresh hosted installation of the active lock passed; see hosted_ci for the tested source commit and run.",
   "full_test_packages": {
     "Jinja2": "3.1.6",
     "MarkupSafe": "3.0.4",
@@ -81,7 +81,32 @@
     "tests_run": 329,
     "unexpected_successes": 0
   },
-  "hosted_ci": "not run; requires push",
+  "hosted_ci": {
+    "conclusion": "success",
+    "full_tests": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests_run": 329
+    },
+    "jobs": {
+      "core (3.11)": "success",
+      "core (3.14)": "success",
+      "full-research": "success",
+      "partial-dependencies": "success"
+    },
+    "partial_tests": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 10,
+      "tests_run": 196
+    },
+    "run_id": 39038470454,
+    "run_url": "https://github.com/lukelu389/weather-risk-forcaster/actions/runs/39038470454",
+    "scope": "Hosted fresh-lock installation and tests for the named source commit; recheck the latest PR head after further commits.",
+    "source_commit": "3f64cdaea21cc9905a288c38963695950c0f23d1",
+    "verified_on": "2026-10-18"
+  },
   "original_workspace_seal": {
     "files_verified": 24,
     "sha256": "18a989f48d2f993e52f34c0e3c2d2840047ea59e214f54ff30a5e5cc52d8e261",
@@ -98,6 +123,38 @@
     "skipped": 10,
     "tests_run": 196,
     "unexpected_successes": 0
+  },
+  "premerge_refresh": {
+    "checked_on": "2026-10-18",
+    "core_tests": {
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "passed": true,
+      "python": "3.12.14",
+      "require_no_skips": false,
+      "skipped": 12,
+      "tests_run": 173,
+      "unexpected_successes": 0
+    },
+    "dependency_audit": {
+      "active_ml_lock_sha256": "955004f96ac51599edb2a472d9c4df0f81971044ba90af6739517c938b173118",
+      "known_vulnerabilities": 0,
+      "packages": 41,
+      "service": "PyPI",
+      "skipped": 0,
+      "tool": "pip-audit 2.10.1"
+    },
+    "scope": "Refresh of unchanged research source, published evidence and active lock; final archive checks are recorded in an external sidecar after committing.",
+    "secret_scan": {
+      "checksum_false_positives_verified_against_history": 7,
+      "confirmed_credentials": 0,
+      "history_commits": 3,
+      "official_download_checksum_verified": true,
+      "raw_findings": 7,
+      "tool": "Gitleaks 8.30.1"
+    },
+    "source_commit": "3f64cdaea21cc9905a288c38963695950c0f23d1"
   },
   "public_evidence": {
     "coverage_event_rows": 27882,
@@ -121,7 +178,7 @@
     "status": "passed"
   },
   "review_date": "2026-10-17",
-  "scope": "Local release verification; no empirical refitting or hosted CI claim.",
+  "scope": "Local release verification plus hosted source-commit CI evidence; no empirical refitting.",
   "secret_scan": {
     "candidate_files_scanned": 238,
     "confirmed_credentials": 0,

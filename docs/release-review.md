@@ -53,14 +53,24 @@ and PyTorch 2.13.0 belong to the release, not the original experiment. The two
 public notebook files, seven PNG figures, numerical tables and committee PDF
 remain the original scientific/communication outputs.
 
-## Remaining external actions
+## Hosted verification and merge boundary
 
-The package can be reviewed locally without credentials. Push the prepared branch
-when ready and check all hosted CI jobs before advertising a passing CI badge.
-No push or public hosting is part of this local preparation. Any private input
-sharing requires the relevant provider rights. GPU work, new vintages, revised
-targets and empirical futures testing belong to separately authorized future
-research, not this release.
+Checked 2026-10-18: [PR 1](https://github.com/lukelu389/weather-risk-forcaster/pull/1)
+is open and mergeable. The [hosted run for source commit 3f64cda](https://github.com/lukelu389/weather-risk-forcaster/actions/runs/39038470454)
+passed all four jobs: core Python 3.11 and 3.14, NumPy/pandas without Matplotlib,
+and the full macOS ARM research environment. The full job installed the active
+41-package lock from scratch and passed 329 tests with zero skips. The partial
+job passed 196 entries with 10 documented optional-module skips.
+
+An independent local core check passed 173 entries with 12 optional-module
+skips, and public verification recomputed all 54 coverage rows from 27,882
+categorical events while checking 122 public artifact hashes and 20 archived
+sealed files. These checks verify the release evidence without private inputs.
+
+The branch is prepared for review before merging. Check the latest PR-head CI
+after any subsequent commit. Any private input sharing still requires the
+relevant provider rights. GPU work, new vintages, revised targets and empirical
+futures testing belong to separate future research.
 
 ## Three interview questions
 

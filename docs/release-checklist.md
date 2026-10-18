@@ -10,7 +10,9 @@ historical data as point in time or its forecasts as suitable for trading.
 - `make test`: standard-library tests, with explicit skips for absent optional packages.
 - `make test-full`: complete research test suite; any skipped test fails this command.
 - `.github/workflows/ci.yml`: core Python 3.11/3.14, NumPy/Pandas without Matplotlib,
-  and full Python 3.14.2 CPU research jobs. Hosted results are pending until GitHub runs them.
+  and full Python 3.14.2 CPU research jobs. All four jobs passed in the
+  [hosted run for source commit 3f64cda](https://github.com/lukelu389/weather-risk-forcaster/actions/runs/39038470454),
+  checked 2026-10-18. Recheck the latest PR head after further commits.
 - `make package-source`: `git archive` of a clean reviewed commit, with a SHA-256 sidecar.
   It rejects committed private/transient paths and preserves existing archives.
 
@@ -44,7 +46,8 @@ Dedicated secret and dependency audits have now run. See [security-review.md](se
 and [release-verification.json](release-verification.json) for actual versions, scope,
 findings and the PyTorch correction. The historical lock is intentionally preserved
 with its disclosed advisories; new work uses the active release lock.
-Hosted CI and provider redistribution permission remain separate checks.
+Hosted CI has passed for the linked source commit. Provider redistribution
+permission remains separate; the release excludes the private provider bundle.
 
 The source archive deliberately cannot reproduce all pilot model fits by itself:
 that route requires the exact permitted private input bundle referenced by the

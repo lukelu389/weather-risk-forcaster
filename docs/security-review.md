@@ -48,6 +48,14 @@ provider cache. A clean scan does not confer data-redistribution rights.
 
 ## Repeating the checks
 
+Pre-merge refresh on 2026-10-18: Gitleaks 8.30.1 scanned all three reachable
+commits through source commit `3f64cda`. Its seven matches were checked against
+the actual historical file lines and the SHA-256 of the public first-access
+audit JSON; all seven are the same documented checksum false positive.
+There were no confirmed credentials. A fresh pip-audit 2.10.1 PyPI query checked
+all 41 active-lock packages, with zero known advisories and none skipped.
+The archived pilot lock and its disclosed advisories remain unchanged.
+
 Use a disposable tool environment and the official tools. From a reviewed checkout:
 
 ```sh
@@ -59,4 +67,6 @@ For a directory scan, first export the intended Git tree and scan that directory
 do not scan or upload the private working directory as the release artifact.
 Review checksum matches against the actual referenced file. Keep scanner reports
 redacted and share only the review summary, tool versions, input hashes and scope.
-Hosted CI remains pending until this release is pushed to GitHub.
+The [hosted source-commit run](https://github.com/lukelu389/weather-risk-forcaster/actions/runs/39038470454)
+passed all four jobs, checked 2026-10-18, including a fresh active-lock installation
+and 329 research tests with zero skips. Confirm CI on the latest PR head before merging.

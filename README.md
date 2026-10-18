@@ -6,7 +6,7 @@
 
 The contribution is an auditable comparison: availability-aware features, matured training labels, matched weather ablations, a recorded evaluation boundary, and preserved negative results.
 
-[Committee memo (PDF)](output/pdf/committee-memo.pdf) · [Recruiter guide](docs/recruiter-guide.md) · [Full results](reports/phase5/evaluation_report.md) · [Release review](docs/release-review.md) · [Financial context](docs/financial-context.md)
+[Committee memo (PDF)](output/pdf/committee-memo.pdf) · [Recruiter guide](docs/recruiter-guide.md) · [Full results](reports/phase5/evaluation_report.md) · [Release review](docs/release-review.md) · [Financial context](docs/financial-context.md) · [CI checks](https://github.com/lukelu389/weather-risk-forcaster/actions/workflows/ci.yml)
 
 ![Final-period VaR coverage by asset, model and confidence level](reports/phase5/01_var_coverage.png)
 
